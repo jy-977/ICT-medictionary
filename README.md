@@ -1,5 +1,5 @@
 <h1 align="center">
-  Meditonary Project
+  Meditionary Project
 </h1>
 <h3>UDL - ICT Project, IT Project Management</h3>
 
