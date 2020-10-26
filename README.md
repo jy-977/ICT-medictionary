@@ -18,7 +18,7 @@ Github with the organization of the "Medictionary" project
 [MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) 
 [User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing)
 
-## Product Backlog items (PBI)
+## Product Backlog items (PBI) - on going
 * Function 0 : sign up with username / pw
 * Function 0 : sign in with username / pw
 * Function 0 : sign up , sign in with Google account (google API)
