@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Medictionary</string>
+    <string name="prefs_file">com.example.medictionary.PREFERENCE_FILE_KEY</string>
 </resources>
