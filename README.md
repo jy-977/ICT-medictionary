@@ -30,4 +30,8 @@ Github with the organization of the "Medictionary" project
 * Function 1 (Searching pills) : UI for description page
 * Function 1 (Searching pills) : Description page function (query)
 
+# Dev
+## Facebook sign in function
+### Activation hash key      
+* keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
 
