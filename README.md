@@ -32,6 +32,5 @@ Github with the organization of the "Medictionary" project
 
 # Dev
 ## Facebook sign in function
-### Activation hash key      
+### Activation hash key // Only for production, deploy app in play store
 * keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
-
