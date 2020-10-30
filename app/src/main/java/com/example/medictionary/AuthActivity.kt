@@ -32,6 +32,8 @@ class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        // Not for production
+        Thread.sleep(1000)
         setTheme(R.style.AppTheme)
 
         super.onCreate(savedInstanceState)
@@ -77,7 +79,8 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
                         } else {
-                            showAlert()
+                            val errorMessage = "Cannot sign up that email and password"
+                            showAlert(errorMessage)
                         }
                     }
             }
@@ -91,7 +94,8 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
                         } else {
-                            showAlert()
+                            val errorMessage = "Cannot log in with that email and password"
+                            showAlert(errorMessage)
                         }
                     }
             }
@@ -128,7 +132,8 @@ class AuthActivity : AppCompatActivity() {
                                 if (it.isSuccessful){
                                     showHome(it.result?.user?.email ?: "", ProviderType.FACEBOOK)
                                 } else {
-                                    showAlert()
+                                    val errorMessage = "Facebook sign in account incorrect."
+                                    showAlert(errorMessage)
                                 }
                             }
                         }
@@ -139,7 +144,8 @@ class AuthActivity : AppCompatActivity() {
                     }
 
                     override fun onError(error: FacebookException?) {
-                        showAlert()
+                        val errorMessage = "Facebook Exception"
+                        showAlert(errorMessage)
                     }
 
                 })
@@ -147,10 +153,10 @@ class AuthActivity : AppCompatActivity() {
 
     }
 
-    private fun showAlert() {
+    private fun showAlert(message: String) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
-        builder.setMessage("Error has ocurred authenticating user")
+        builder.setMessage(message)
         builder.setPositiveButton("Accept", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
@@ -182,12 +188,14 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             showHome(account.email ?: "", ProviderType.GOOGLE)
                         } else {
-                            showAlert()
+                            val errorMessage = "Google sign in account incorrect."
+                            showAlert(errorMessage)
                         }
                     }
                 }
             } catch (e: ApiException) {
-                showAlert()
+                val errorMessage = "Api Exception from trying sign in with Google account."
+                e.printStackTrace()
             }
         }
 
