@@ -15,12 +15,12 @@ Github with the organization of the "Medictionary" project
 
 ## Documents 
 [presentation]
-[Idea Presentation] (https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
+[Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
 
 [Scurm meeting]
 [Business Plan]
-[Sprint Explanation] (https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)
-[General System Architecture] (https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing)
+[Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)
+[General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing)
 [MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) 
 [User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing)
 
