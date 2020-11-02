@@ -20,11 +20,16 @@
 
 [Scurm meeting] |
 [Business Plan] |
-[Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)|
-[General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing) |
-[MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) |
-[User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing) |
 
+[Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)
+
+[General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing)
+
+[MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) 
+
+[User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing) 
+
+[Finanacial model](https://drive.google.com/file/d/1IqXhbGNB2awalN9h0mpop3EdCRJC8l8B/view?usp=sharing) 
 ## Product Backlog items (PBI)
 
 [Function 0]
@@ -68,7 +73,7 @@
 | 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
 | 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 2.5          | Done     |
 | 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | 40% Done |
-| 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            |          |
+| 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | 60% Done |
 | 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | ?            | On going |
 | 1       |19 OCT - 09 NOV | DB data model                           |         | 6.5          | On going |
 | 1       |19 OCT - 09 NOV | F0 : sign up with use0rname / pw        |Eyad,Marc| 2            | On going |
