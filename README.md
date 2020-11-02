@@ -5,24 +5,25 @@
 
 ### :rainbow: Team <Dr.Strangers> Contributors
 
-[Scrum master Jeongyun Lee](https://github.com/jy-977) |
-[Marc Visa](https://github.com/mvp17) | 
-[Ronnel Mattew](https://github.com/ron7858) |
-[Eyad Al Hafi](https://github.com/eyadfhafi) |
+| Assistant  | Role  |  
+|------------|-------|
+|[Jeongyun Lee](https://github.com/jy-977) |Scrum master|
+|[Marc Visa](https://github.com/mvp17) | Developer  |   
+|[Ronnel Mattew](https://github.com/ron7858) | Front-End Expert |  
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Scrum Master |  
 
 
-Github with the organization of the "Medictionary" project
 
 ## Documents 
 [presentation]
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
 
-[Scurm meeting]
-[Business Plan]
-[Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)
-[General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing)
-[MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) 
-[User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing)
+[Scurm meeting] |
+[Business Plan] |
+[Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)|
+[General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing) |
+[MOCK UP](https://ovenapp.io/project/jdRn2HjGOLjc5BLdswLKmtsU2wOHtk0b#8p8HX) |
+[User Case](https://drive.google.com/file/d/1AWF2fvAszot6RFgF82olCPUuq7DtmVcK/view?usp=sharing) |
 
 ## Product Backlog items (PBI)
 
@@ -60,7 +61,6 @@ Github with the organization of the "Medictionary" project
 * Mock up
 
 ## :clock1:Scrum Sprint :clock4:
-
 | Sprint  | Date           |Task                                     | PIC     | Effort Point | status   |
 |:--------|:---------------|:----------------------------------------|:--------|:-------------|----------|
 | 1       |19 OCT - 09 NOV | Sprint meeting managing                 | Yoon    | 1.5          |          |
@@ -79,13 +79,13 @@ Github with the organization of the "Medictionary" project
 | 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | On going |
 | 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 4.5          | On going |
 | 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | On going |
-|---------|----------------|-----------------------------------------|---------|--------------|----------|
+|         |                |                                         |         |              |          |
 | 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Yoon    | 1.5          |          |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |          |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     |         | 8            |          |
 | 2       |10 NOV - 25 NOV | F2 : pill box                           |         | 2.5          |          |
 | 2       |10 NOV - 25 NOV | Building the DB                         |         | ?            |          |
-|---------|----------------|-----------------------------------------|---------|--------------|----------|
+|         |                |                                         |         |              |          |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |          |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |          |
 | 3       |30 NOV - 22 DEC | F3 : notification with pop up           |         | 2.5          |          |
