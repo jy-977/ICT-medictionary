@@ -8,9 +8,9 @@
 | Assistant  | Role  |  
 |------------|-------|
 |[Jeongyun Lee](https://github.com/jy-977) |Scrum master|
-|[Marc Visa](https://github.com/mvp17) | Developer  |   
-|[Ronnel Mattew](https://github.com/ron7858) | Front-End Expert |  
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Scrum Master |  
+|[Marc Visa](https://github.com/mvp17) | Front-End Expert|   
+|[Ronnel Mattew](https://github.com/ron7858) | Fianacial Expert |  
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Developer |  
 
 
 
