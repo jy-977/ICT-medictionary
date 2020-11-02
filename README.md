@@ -21,6 +21,8 @@
 [Scurm meeting] |
 [Business Plan] |
 
+[Database data model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)
+
 [Sprint Explanation](https://drive.google.com/file/d/1SH9V2zCAHZUetrLaVl4ES2ygT932EJH4/view?usp=sharing)
 
 [General System Architecture](https://drive.google.com/file/d/1AyWDiC-bjXfqX34oqYc8kPdjP1hy3vig/view?usp=sharing)
