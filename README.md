@@ -74,10 +74,10 @@
 | 1       |19 OCT - 09 NOV | Presentation resource & presentatin     |         | 4.5          |          |
 | 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
 | 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 2.5          | Done     |
-| 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | 40% Done |
+| 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | Done    |
 | 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | 60% Done |
 | 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | ?            | On going |
-| 1       |19 OCT - 09 NOV | DB data model                           |         | 6.5          | On going |
+| 1       |19 OCT - 09 NOV | DB data model                           | Marc    | 6.5          | Done     |
 | 1       |19 OCT - 09 NOV | F0 : sign up with use0rname / pw        |Eyad,Marc| 2            | On going |
 | 1       |19 OCT - 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 1.5          | On going |
 | 1       |19 OCT - 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | On going |
