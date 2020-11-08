@@ -23,20 +23,19 @@
 
 | MON  | TUE  | WED | THU | FRI | SAT | SUN |  
 |------|------|-----|-----|-----|-----|-----|
-|[19]  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|24|25
+|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|24|25
 |26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|31|1|
 |2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|7|8|
+
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing)
 
 
-<b>Technical Model</b>
-
+<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1ZAh9LFS-nwwYFutrp7EiR9g_zu90jlM3/view?usp=sharing)
 
-<b>Business Model</b>
-
+<b>Business Model</b>  
 [User Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
 [User Case Description](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
 [Finanacial model](https://drive.google.com/file/d/1IqXhbGNB2awalN9h0mpop3EdCRJC8l8B/view?usp=sharing) 
