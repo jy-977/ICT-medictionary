@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medictionary">
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".SearchEngineActivity"></activity>
+        <activity android:name=".SearchListActivity"></activity>
+        <activity android:name=".PillInfoActivity"></activity>
         <activity
             android:name=".AuthActivity"
             android:theme="@style/SplashThem">
