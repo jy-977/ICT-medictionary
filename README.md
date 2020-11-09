@@ -35,9 +35,10 @@
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1ZAh9LFS-nwwYFutrp7EiR9g_zu90jlM3/view?usp=sharing)
 
-<b>Business Model</b>  
-[User Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
-[User Case Description](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
+<b>ETCl</b>  
+[Use Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
+[Use Case Description](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
+[User stories](https://docs.google.com/document/d/178I4GFFEglWldp21qo7pgHYZH8e5FPbbvAqB-eMqFPQ/edit?usp=sharing)
 [Finanacial model](https://drive.google.com/file/d/1IqXhbGNB2awalN9h0mpop3EdCRJC8l8B/view?usp=sharing) 
 
 ## 🚩 Product Backlog items (PBI) 🚩
