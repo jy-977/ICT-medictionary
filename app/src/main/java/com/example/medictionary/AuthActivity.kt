@@ -121,7 +121,10 @@ class AuthActivity : AppCompatActivity() {
             else
                 showAlert("All fields are required")
         }
-
+        text_click_forgot_pwd.setOnClickListener {
+            val forgotPwdIntent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(forgotPwdIntent)
+        }
         googleButton.setOnClickListener {
 
             // Configuration
@@ -162,7 +165,7 @@ class AuthActivity : AppCompatActivity() {
                         }
 
                         override fun onCancel() {
-
+                            LoginManager.getInstance().logOut()
                         }
 
                         override fun onError(error: FacebookException?) {
