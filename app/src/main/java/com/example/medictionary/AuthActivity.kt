@@ -2,10 +2,10 @@ package com.example.medictionary
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -15,25 +15,26 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.ktx.Firebase
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_auth.*
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 
 class AuthActivity : AppCompatActivity() {
 
     private lateinit var firebaseAnalytics: FirebaseAnalytics
-    private val googleSignIn = 100
+    private val GOOGLE_SIGN_IN = 100
     private  val callbackManager = CallbackManager.Factory.create()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // Not for production
         Thread.sleep(1000)
-
         setTheme(R.style.AppTheme)
 
         super.onCreate(savedInstanceState)
@@ -68,43 +69,58 @@ class AuthActivity : AppCompatActivity() {
 
     }
 
+
+    fun isValidPassword(password: String?): Boolean {
+        val pattern: Pattern
+        val matcher: Matcher
+        val PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$"
+        pattern = Pattern.compile(PASSWORD_PATTERN)
+        matcher = pattern.matcher(password)
+        return matcher.matches()
+    }
+
     private fun setup() {
+        title = "Authentication"
 
         signUpButton.setOnClickListener {
-            if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
-                FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(emailEditText.text.toString(),
-                        passwordEditText.text.toString()).addOnCompleteListener{
-                        if (it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
-                        } else {
-                            val errorMessage = "Cannot sign up that email and password"
-                            showAlert(errorMessage)
-                        }
+
+                if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
+                    if(passwordEditText.getText().toString().length>8 && isValidPassword(passwordEditText.getText().toString())){
+                    FirebaseAuth.getInstance()
+                            .createUserWithEmailAndPassword(emailEditText.text.toString(),
+                                    passwordEditText.text.toString()).addOnCompleteListener {
+                                if (it.isSuccessful) {
+                                    showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                                } else {
+                                    val errorMessage = "Cannot sign up that email and password"
+                                    showAlert(errorMessage)
+                                }
+                            }
                     }
-            }
+                    else
+                        showAlert("The password should contains number, letter, capital letters and sign")
+                } else
+                    showAlert("All fields are required")
+
+
         }
 
         loginButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
                 FirebaseAuth.getInstance()
                     .signInWithEmailAndPassword(emailEditText.text.toString(),
-                        passwordEditText.text.toString()).addOnCompleteListener{
+                            passwordEditText.text.toString()).addOnCompleteListener{
                         if (it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
+                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
                         } else {
                             val errorMessage = "Cannot log in with that email and password"
                             showAlert(errorMessage)
                         }
                     }
             }
+            else
+                showAlert("All fields are required")
         }
-
-        text_click_forgot_pwd.setOnClickListener {
-            val forgotPwdIntent = Intent(this, ForgotPasswordActivity::class.java)
-            startActivity(forgotPwdIntent)
-        }
-
 
         googleButton.setOnClickListener {
 
@@ -118,7 +134,7 @@ class AuthActivity : AppCompatActivity() {
             val googleClient = GoogleSignIn.getClient(this, googleConf)
             googleClient.signOut()
 
-            startActivityForResult(googleClient.signInIntent, googleSignIn)
+            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)
         }
 
         facebookButton.setOnClickListener {
@@ -126,34 +142,35 @@ class AuthActivity : AppCompatActivity() {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
 
             LoginManager.getInstance().registerCallback(callbackManager,
-                object : FacebookCallback<LoginResult> {
-                    override fun onSuccess(result: LoginResult?) {
+                    object : FacebookCallback<LoginResult> {
+                        override fun onSuccess(result: LoginResult?) {
 
-                        result?.let {
-                            val token = it.accessToken
+                            result?.let {
+                                val token = it.accessToken
 
-                            val credential = FacebookAuthProvider.getCredential(token.token)
-                            FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener{
-                                if (it.isSuccessful){
-                                    showHome(it.result?.user?.email ?: "", ProviderType.FACEBOOK)
-                                } else {
-                                    val errorMessage = "Facebook sign in account incorrect."
-                                    showAlert(errorMessage)
+                                val credential = FacebookAuthProvider.getCredential(token.token)
+                                FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
+                                    if (it.isSuccessful) {
+                                        showHome(it.result?.user?.email
+                                                ?: "", ProviderType.FACEBOOK)
+                                    } else {
+                                        val errorMessage = "Facebook sign in account incorrect."
+                                        showAlert(errorMessage)
+                                    }
                                 }
                             }
                         }
-                    }
 
-                    override fun onCancel() {
-                        LoginManager.getInstance().logOut()
-                    }
+                        override fun onCancel() {
 
-                    override fun onError(error: FacebookException?) {
-                        val errorMessage = "Facebook Exception"
-                        showAlert(errorMessage)
-                    }
+                        }
 
-                })
+                        override fun onError(error: FacebookException?) {
+                            val errorMessage = "Facebook Exception"
+                            showAlert(errorMessage)
+                        }
+
+                    })
         }
 
     }
@@ -181,7 +198,7 @@ class AuthActivity : AppCompatActivity() {
 
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == googleSignIn) {
+        if (requestCode == GOOGLE_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
 
             try {
