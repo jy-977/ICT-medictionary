@@ -98,7 +98,7 @@ class AuthActivity : AppCompatActivity() {
                             }
                     }
                     else
-                        showAlert("The password should contains number, letter, capital letter and sign.")
+                        showAlert("The password should contains number, letter, capital letters and sign")
                 } else
                     showAlert("All fields are required")
 

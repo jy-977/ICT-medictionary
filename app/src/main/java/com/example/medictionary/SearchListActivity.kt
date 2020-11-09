@@ -7,7 +7,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.core.view.size
 import com.facebook.CallbackManager
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
@@ -40,9 +43,13 @@ class SearchListActivity : AppCompatActivity() {
                             list.add(Model(mainName, document.get("des").toString(), R.drawable.nexium))
                             idsList.add(document.get("itemID").toString())
                         }
+
                     }
                     listView.adapter = ListAdapter(this@SearchListActivity, R.layout.row, list)
+                    if(list.size.equals(0)){
+                        showAlert("No results")
 
+                    }
 
                 }
             })
@@ -63,6 +70,10 @@ class SearchListActivity : AppCompatActivity() {
                         }
                     }
                     listView.adapter = ListAdapter(this@SearchListActivity, R.layout.row, list)
+                    if(list.size.equals(0)){
+                        showAlert("No results")
+
+                    }
                 }
             })
         }
@@ -74,6 +85,17 @@ class SearchListActivity : AppCompatActivity() {
 
 
     }
+
+
+
+    }
+    private fun showAlert(message: String) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage(message)
+        builder.setPositiveButton("Accept", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 
 }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.example.medictionary.R
 import com.example.medictionary.SearchListActivity
@@ -56,26 +57,33 @@ class SearchFragment : Fragment() {
                 }
             }
         })
+
             val searchByNameBtn= root.findViewById<View>(R.id.searchNameBtn) as Button
         val nameEt= root.findViewById<View>(R.id.nameEt) as EditText
-        searchByNameBtn.setOnClickListener {
-            val intent = Intent(activity, SearchListActivity::class.java)
-            intent.putExtra("type", "byName")
-            intent.putExtra("name", nameEt.text.toString())
-            startActivity(intent);
+
+                searchByNameBtn.setOnClickListener {
+                    if (nameEt.text.isNotEmpty() || nameEt.text.isNotBlank()) {
+                        val intent = Intent(activity, SearchListActivity::class.java)
+                        intent.putExtra("type", "byName")
+                        intent.putExtra("name", nameEt.text.toString())
+                        startActivity(intent);
 
 
-        }
+                    } else
+                        showAlert("Name field should not be empty")
+                }
         val searchByCharBtn = root.findViewById<View>(R.id.searchCharBtn) as Button
         val codeTxt = root.findViewById<View>(R.id.codeEt) as EditText
         searchByCharBtn.setOnClickListener {
-            val intent = Intent(activity, SearchListActivity::class.java)
-            intent.putExtra("type", "byChar")
-            intent.putExtra("color", colorSpinner.selectedItem.toString())
-            intent.putExtra("shape", shapeSpinner.selectedItem.toString())
-            intent.putExtra("code", codeTxt.text.toString())
-            startActivity(intent);
-
+            if (codeTxt.text.isNotEmpty() || codeTxt.text.isNotBlank()) {
+                val intent = Intent(activity, SearchListActivity::class.java)
+                intent.putExtra("type", "byChar")
+                intent.putExtra("color", colorSpinner.selectedItem.toString())
+                intent.putExtra("shape", shapeSpinner.selectedItem.toString())
+                intent.putExtra("code", codeTxt.text.toString())
+                startActivity(intent);
+            }else
+                showAlert("Code field should not be empty")
         }
 
     }catch (ex: Exception){
@@ -84,6 +92,13 @@ class SearchFragment : Fragment() {
 
         return root
     }
-
+    private fun showAlert(message: String) {
+        val builder = AlertDialog.Builder(activity!!)
+        builder.setTitle("Error")
+        builder.setMessage(message)
+        builder.setPositiveButton("Accept", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
 
 }
