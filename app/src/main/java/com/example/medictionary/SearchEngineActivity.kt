@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.size
 import com.google.android.gms.tasks.OnCompleteListener
@@ -50,27 +51,44 @@ class SearchEngineActivity : AppCompatActivity() {
         val searchByNameBtn= findViewById<View>(R.id.searchNameBtn) as Button
         val nameEt= findViewById<View>(R.id.nameEt) as EditText
         searchByNameBtn.setOnClickListener {
-
-                val homeIntent = Intent(this, SearchListActivity::class.java).apply {
-                    putExtra("type","byName")
-                    putExtra("name", nameEt.text.toString())
+            if(nameEt.text.toString().trim().isNotEmpty() ||
+                    nameEt.text.toString().trim().isNotBlank()) {
+                    val homeIntent = Intent(this, SearchListActivity::class.java).apply {
+                        putExtra("type", "byName")
+                        putExtra("name", nameEt.text.toString())
+                    }
+                    startActivity(homeIntent)
                 }
-                startActivity(homeIntent)
+            else {
+                showAlert("The searching field should not be empty! please write the medicine name")
+            }
 
         }
         val searchByCharBtn = findViewById<View>(R.id.searchCharBtn) as Button
         val codeTxt = findViewById<View>(R.id.codeEt) as TextView
         searchByCharBtn.setOnClickListener {
-            val homeIntent = Intent(this, SearchListActivity::class.java).apply {
-                putExtra("type","byChar")
-                putExtra("color", colorSpinner.selectedItem.toString())
-                putExtra("shape", shapeSpinner.selectedItem.toString())
-                putExtra("code", codeTxt.text.toString())
+            if(codeTxt.toString().trim().length>0) {
+                val homeIntent = Intent(this, SearchListActivity::class.java).apply {
+                    putExtra("type", "byChar")
+                    putExtra("color", colorSpinner.selectedItem.toString())
+                    putExtra("shape", shapeSpinner.selectedItem.toString())
+                    putExtra("code", codeTxt.text.toString())
+                }
+                startActivity(homeIntent)
             }
-            startActivity(homeIntent)
+            else
+            showAlert("The code field should not be empty! please write the medicine code")
         }
 
 
+    }
+    private fun showAlert(message: String) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage(message)
+        builder.setPositiveButton("Accept", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 
 }
