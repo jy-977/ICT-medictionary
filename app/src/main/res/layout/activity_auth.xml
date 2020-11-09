@@ -5,8 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AuthActivity">
+<ImageView
+    android:id="@+id/background"
+    android:src="@drawable/mainbackground"
+    android:layout_width="0dp"
+    android:layout_height="120dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"/>
+    <ImageView
+        android:id="@+id/person"
+        android:src="@drawable/ic_person"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
 
     <LinearLayout
+
         android:id="@+id/authLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -15,7 +36,8 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp">
 
         <EditText
             android:id="@+id/emailEditText"
@@ -92,5 +114,6 @@
             android:background="@color/white"
             android:text="Facebook"
             android:textColor="@color/colorPrimaryDark" />
-    </LinearLayout>
+    </LinearLayout
+>
 </androidx.constraintlayout.widget.ConstraintLayout>
