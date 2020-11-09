@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import com.facebook.CallbackManager
@@ -27,13 +26,14 @@ import kotlinx.android.synthetic.main.activity_auth.*
 class AuthActivity : AppCompatActivity() {
 
     private lateinit var firebaseAnalytics: FirebaseAnalytics
-    private val GOOGLE_SIGN_IN = 100
+    private val googleSignIn = 100
     private  val callbackManager = CallbackManager.Factory.create()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // Not for production
         Thread.sleep(1000)
+
         setTheme(R.style.AppTheme)
 
         super.onCreate(savedInstanceState)
@@ -69,7 +69,6 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun setup() {
-        title = "Authentication"
 
         signUpButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
@@ -101,6 +100,12 @@ class AuthActivity : AppCompatActivity() {
             }
         }
 
+        text_click_forgot_pwd.setOnClickListener {
+            val forgotPwdIntent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(forgotPwdIntent)
+        }
+
+
         googleButton.setOnClickListener {
 
             // Configuration
@@ -113,7 +118,7 @@ class AuthActivity : AppCompatActivity() {
             val googleClient = GoogleSignIn.getClient(this, googleConf)
             googleClient.signOut()
 
-            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)
+            startActivityForResult(googleClient.signInIntent, googleSignIn)
         }
 
         facebookButton.setOnClickListener {
@@ -140,7 +145,7 @@ class AuthActivity : AppCompatActivity() {
                     }
 
                     override fun onCancel() {
-
+                        LoginManager.getInstance().logOut()
                     }
 
                     override fun onError(error: FacebookException?) {
@@ -176,7 +181,7 @@ class AuthActivity : AppCompatActivity() {
 
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == GOOGLE_SIGN_IN) {
+        if (requestCode == googleSignIn) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
 
             try {

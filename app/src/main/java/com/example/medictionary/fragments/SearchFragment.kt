@@ -26,38 +26,37 @@ class SearchFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_search, container, false)
         try{
 
-        val db= FirebaseFirestore.getInstance()
-        val shapesRef= db.collection("medicines")
-       var shapeSpinner= root.findViewById<View>(R.id.shapeSpinner) as Spinner
-        val colorSpinner=root.findViewById<View>(R.id.colorSpinner) as Spinner
-             val shapes: MutableList<String?> = ArrayList()
-            val colors: MutableList<String?> = ArrayList()
-             val shapeAdapter= ArrayAdapter(
-                 activity!!,
-                 android.R.layout.simple_spinner_item,
-                 shapes
-             )
-            shapeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            shapeSpinner.adapter=shapeAdapter
-            val colorAdapter= ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, colors)
-            colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            colorSpinner.adapter=colorAdapter
-        shapesRef.get().addOnCompleteListener(object : OnCompleteListener<QuerySnapshot?> {
-            override fun onComplete(task: Task<QuerySnapshot?>) {
-                if (task.isSuccessful()) {
-                    for (document in task.getResult()!!) {
-                         if (!shapes.contains(document.getString("shape")))
-                            shapes.add(document.getString("shape"))
-                        if (!colors.contains(document.getString("color")))
-                            colors.add(document.getString("color"))
-                    }
-                    shapeAdapter.notifyDataSetChanged()
-                    colorAdapter.notifyDataSetChanged()
+        val db = FirebaseFirestore.getInstance()
+        val shapesRef = db.collection("medicines")
+        val shapeSpinner = root.findViewById<View>(R.id.shapeSpinner) as Spinner
+        val colorSpinner = root.findViewById<View>(R.id.colorSpinner) as Spinner
+        val shapes: MutableList<String?> = ArrayList()
+        val colors: MutableList<String?> = ArrayList()
+        val shapeAdapter = ArrayAdapter(
+             activity!!,
+             android.R.layout.simple_spinner_item,
+             shapes
+        )
+        shapeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        shapeSpinner.adapter = shapeAdapter
+        val colorAdapter = ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, colors)
+        colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        colorSpinner.adapter = colorAdapter
+        shapesRef.get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                for (document in task.result!!) {
+                    if (!shapes.contains(document.getString("shape")))
+                        shapes.add(document.getString("shape"))
+                    if (!colors.contains(document.getString("color")))
+                        colors.add(document.getString("color"))
                 }
+                shapeAdapter.notifyDataSetChanged()
+                colorAdapter.notifyDataSetChanged()
             }
-        })
-            val searchByNameBtn= root.findViewById<View>(R.id.searchNameBtn) as Button
-        val nameEt= root.findViewById<View>(R.id.nameEt) as EditText
+        }
+
+        val searchByNameBtn = root.findViewById<View>(R.id.searchNameBtn) as Button
+        val nameEt = root.findViewById<View>(R.id.nameEt) as EditText
         searchByNameBtn.setOnClickListener {
             val intent = Intent(activity, SearchListActivity::class.java)
             intent.putExtra("type", "byName")
@@ -79,11 +78,10 @@ class SearchFragment : Fragment() {
         }
 
     }catch (ex: Exception){
-            Toast.makeText(activity!!, "${ex}", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity!!, "$ex", Toast.LENGTH_LONG).show()
         }
 
         return root
     }
-
 
 }

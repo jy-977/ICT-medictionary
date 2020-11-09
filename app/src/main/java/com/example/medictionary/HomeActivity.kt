@@ -1,14 +1,12 @@
 package com.example.medictionary
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.medictionary.fragments.NotificationFragment
 import com.example.medictionary.fragments.PillBoxFragment
 import com.example.medictionary.fragments.SearchFragment
-import com.facebook.login.LoginManager
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
 
@@ -22,6 +20,7 @@ class HomeActivity : AppCompatActivity() {
     private val notificationFragment= NotificationFragment()
     private val searchFragment=SearchFragment()
     private val pillBoxFragment=PillBoxFragment()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -31,9 +30,9 @@ class HomeActivity : AppCompatActivity() {
         replaceFragment(searchFragment)
         bottm_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.ic_notification ->replaceFragment (notificationFragment)
-                R.id.ic_search ->replaceFragment (searchFragment)
-                R.id.ic_pillbox ->replaceFragment (pillBoxFragment)
+                R.id.ic_notification -> replaceFragment (notificationFragment)
+                R.id.ic_search -> replaceFragment (searchFragment)
+                R.id.ic_pillbox -> replaceFragment (pillBoxFragment)
             }
             true
         }
@@ -46,11 +45,9 @@ class HomeActivity : AppCompatActivity() {
         prefs.apply()
     }
     private fun replaceFragment(fragment: Fragment){
-        if(fragment!=null){
-            val transaction=supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container,fragment)
-            transaction.commit()
-        }
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container,fragment)
+        transaction.commit()
     }
 
 

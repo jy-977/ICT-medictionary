@@ -64,6 +64,19 @@
             android:layout_width="match_parent"
             android:layout_height="8dp" />
 
+        <TextView
+            android:id="@+id/text_click_forgot_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Forgot password ?"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -114,6 +127,7 @@
             android:background="@color/white"
             android:text="Facebook"
             android:textColor="@color/colorPrimaryDark" />
-    </LinearLayout
->
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
