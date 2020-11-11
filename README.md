@@ -3,58 +3,46 @@
 </h1>
 <h3>UDL - ICT Project, IT Project Management</h3>
 
-## Sprint 2 Roles
 ### :rainbow: Team <Dr.Strangers> Contributors
-| Assistant  | Role  |  
-|------------|-------|
-|[Jeongyun Lee](https://github.com/jy-977) |UI Developer |
-|[Marc Visa](https://github.com/mvp17) | Scrum Master |   
-|[Ronnel Mattew](https://github.com/ron7858) | Finacial Expert |  
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer |
-
-
-## Sprint 1 Roles
-### :rainbow: Team <Dr.Strangers> Contributors
-
-| Assistant  | Role  |  
-|------------|-------|
-|[Jeongyun Lee](https://github.com/jy-977) |Scrum master|
-|[Marc Visa](https://github.com/mvp17) | General Expert|   
-|[Ronnel Mattew](https://github.com/ron7858) | Fianacial Expert |  
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Developer |  
-
-
+| Assistant  | 1st S.P Role  | 2nd S.P Role  |  
+|------------|-------|-------|
+|[Jeongyun Lee](https://github.com/jy-977) |UI Developer |Scrum master|
+|[Marc Visa](https://github.com/mvp17) | Scrum Master |General Expert| 
+|[Ronnel Mattew](https://github.com/ron7858) | Finacial Expert | Fianacial Expert |   
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer | Developer |
 
 ## :memo: Documents :memo: 
 <b>Presentation</b>
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
+[1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing)
+
+### Sprint 1 Daily Scrum Meetings Minutes
+|Sprint| MON  | TUE  | WED | THU | FRI | SAT | SUN |  
+|------|------|------|-----|-----|-----|-----|-----|
+|1st|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|24|25
+|1st|26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|31|1|
+|1st|2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|7|8|
+|2st|9|10|[11](https://drive.google.com/file/d/151_DInTBIDh1Vyh4NXg5B8fuh5ikFP3e/view?usp=sharing)|12|13|14|15
+|2st|16|17|18|19|20|21|22
+|2st/3rd|23|24|25|26|27|28|29
+
+<b>Sprint Plan & Report & Retrospective </b>  
+[Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
+[1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) |  
+1st sprint retrospective |
+
+2nd sprint plan |
+2nd sprint report |
+2nd sprint retrosective |
 
 
-### Sprint 2 Daily Scrum Meetings
-| MON  | TUE  | WED | THU | FRI | SAT | SUN |  
-|------|------|-----|-----|-----|-----|-----|
-
-
-
-### Sprint 1 Daily Scrum meetings
-
-| MON  | TUE  | WED | THU | FRI | SAT | SUN |  
-|------|------|-----|-----|-----|-----|-----|
-|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|24|25
-|26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|31|1|
-|2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|7|8|
-
-
-
-[Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing)
-[1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing)
 
 <b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1ZAh9LFS-nwwYFutrp7EiR9g_zu90jlM3/view?usp=sharing)
 
-<b>ETCl</b>  
+<b>ETC</b>  
 [Use Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
 [Use Case Description](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
 [User stories](https://docs.google.com/document/d/178I4GFFEglWldp21qo7pgHYZH8e5FPbbvAqB-eMqFPQ/edit?usp=sharing)
@@ -114,16 +102,16 @@
 | 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 4.5          | On going |
 | 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | On going |
 |         |                |                                         |         |              |          |
-| 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Yoon    | 1.5          |          |
+| 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Marc    | 1.5          |          |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |          |
-| 2       |10 NOV - 25 NOV | F2 : setting alarms                     |         | 8            |          |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           |         | 2.5          |          |
-| 2       |10 NOV - 25 NOV | Building the DB                         |         | ?            |          |
+| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            |          |
+| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          |          |
+| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad        | ?            |          |
+| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          |          |
+| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | ?            |          |
 |         |                |                                         |         |              |          |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |          |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |          |
-| 3       |30 NOV - 22 DEC | F3 : notification with pop up           |         | 2.5          |          |
-| 3       |30 NOV - 22 DEC | F3 : noti scenario                      |         | ?            |          |
 
 
 
