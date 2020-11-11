@@ -3,6 +3,17 @@
 </h1>
 <h3>UDL - ICT Project, IT Project Management</h3>
 
+## Sprint 2 Roles
+### :rainbow: Team <Dr.Strangers> Contributors
+| Assistant  | Role  |  
+|------------|-------|
+|[Jeongyun Lee](https://github.com/jy-977) |UI Developer |
+|[Marc Visa](https://github.com/mvp17) | Scrum Master |   
+|[Ronnel Mattew](https://github.com/ron7858) | Finacial Expert |  
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer |
+
+
+## Sprint 1 Roles
 ### :rainbow: Team <Dr.Strangers> Contributors
 
 | Assistant  | Role  |  
@@ -19,7 +30,13 @@
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
 
 
-<b>Daily Scrum Meeting</b>
+### Sprint 2 Daily Scrum Meetings
+| MON  | TUE  | WED | THU | FRI | SAT | SUN |  
+|------|------|-----|-----|-----|-----|-----|
+
+
+
+### Sprint 1 Daily Scrum meetings
 
 | MON  | TUE  | WED | THU | FRI | SAT | SUN |  
 |------|------|-----|-----|-----|-----|-----|
@@ -27,6 +44,8 @@
 |26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|31|1|
 |2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|7|8|
 |9|10|11|12|13|14|15
+
+
 
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing)
 [1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing)
