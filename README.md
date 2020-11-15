@@ -17,19 +17,19 @@
 [1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing)
 
 ### Sprint 1 Daily Scrum Meetings Minutes
-|Sprint| MON  | TUE  | WED | THU | FRI | SAT | SUN |  
-|------|------|------|-----|-----|-----|-----|-----|
-|1st|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|24|25
-|1st|26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|31|1|
-|1st|2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|7|8|
-|2st|9|10|[11](https://drive.google.com/file/d/151_DInTBIDh1Vyh4NXg5B8fuh5ikFP3e/view?usp=sharing)|12|13|14|15
-|2st|16|17|18|19|20|21|22
-|2st/3rd|23|24|25|26|27|28|29
+|Sprint| MON  | TUE  | WED | THU | FRI |  
+|------|------|------|-----|-----|-----|
+|1st|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|
+|1st|26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|
+|1st|2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|
+|2st|9|10|[11](https://drive.google.com/file/d/151_DInTBIDh1Vyh4NXg5B8fuh5ikFP3e/view?usp=sharing)|[12](https://drive.google.com/file/d/17MWOyqB6o1HbmId7CSgnBKS413ktyvxw/view?usp=sharing)|13|
+|2st|16|17|18|19|20|
+|2st/3rd|23|24|25|26|27|
 
 <b>Sprint Plan & Report & Retrospective </b>  
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
 [1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) |  
-1st sprint retrospective |
+[1st sprint retrospective](https://drive.google.com/file/d/1Jf_6oyCLwRaBC1rgnGqHERNL39PBYh4K/view?usp=sharing) |
 
 2nd sprint plan |
 2nd sprint report |
@@ -85,33 +85,38 @@
 ## :clock1:Scrum Sprint :clock4:
 | Sprint  | Date           |Task                                     | PIC     | Effort Point | status   |
 |:--------|:---------------|:----------------------------------------|:--------|:-------------|----------|
-| 1       |19 OCT - 09 NOV | Sprint meeting managing                 | Yoon    | 1.5          | On going |
-| 1       |19 OCT - 09 NOV | Presentation resource & presentatin     | Yoon    | 4.5          | On going |
+| 1       |19 OCT - 09 NOV | Sprint meeting managing                 | Yoon    | 1.5          | Done |
+| 1       |19 OCT - 09 NOV | Presentation resource & presentatin     | Yoon    | 4.5          | Done |
 | 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
 | 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 2.5          | Done     |
 | 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | Done     |
-| 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | 60% Done |
+| 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | Done |
 | 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | ?            | Done     |
 | 1       |19 OCT - 09 NOV | DB data model                           | Marc    | 6.5          | Done     |
-| 1       |19 OCT - 09 NOV | F0 : sign up with use0rname / pw        |Eyad,Marc| 2            | On going |
-| 1       |19 OCT - 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 1.5          | On going |
-| 1       |19 OCT - 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | On going |
-| 1       |19 OCT - 09 NOV | F0 : sign in with Facebook account      |Eyad,Marc| 2            | On going |
-| 1       |19 OCT - 09 NOV | F1 : start menu                         |Eyad,Marc| 2.5          | On going |
-| 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | On going |
-| 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 4.5          | On going |
-| 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | On going |
+| 1       |19 OCT - 09 NOV | F0 : sign up with use0rname / pw        |Eyad,Marc| 2            | Done |
+| 1       |19 OCT - 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 1.5          | Done |
+| 1       |19 OCT - 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | Done |
+| 1       |19 OCT - 09 NOV | F0 : sign in with Facebook account      |Eyad,Marc| 2            | Done |
+| 1       |19 OCT - 09 NOV | F1 : start menu                         |Eyad,Marc| 2.5          | Done |
+| 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | Done |
+| 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 4.5          | Done |
+| 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 6.5          | Done |
 |         |                |                                         |         |              |          |
 | 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Marc    | 1.5          |          |
+| 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          |          |
+| 2       |10 NOV - 25 NOV | Scrum Sprint KANBAN UPDATE              |         | 2            |          |
+| 2       |10 NOV - 25 NOV | Scrum Retrospective                     | Yoon    | 1.5          | Done   |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |          |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            |          |
 | 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          |          |
-| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad        | ?            |          |
+| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | ?            |          |
 | 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          |          |
 | 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | ?            |          |
 |         |                |                                         |         |              |          |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |          |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |          |
+| 2       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |          |
+| 2       |30 NOV - 22 DEC | Scrum Retrospective                     | Marc    | 1.5          |          |
 
 
 
