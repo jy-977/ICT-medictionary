@@ -112,11 +112,10 @@
 | 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | ?            |          |
 | 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          |          |
 | 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | ?            |          |
-
 |         |                |                                         |         |              |          |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |          |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |          |
-| 2       |30 NOV - 22 DEC | Scrum Planning                          |     | 1.5          |          |
+| 2       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |          |
 | 2       |30 NOV - 22 DEC | Scrum Retrospective                     | Marc    | 1.5          |          |
 
 
