@@ -23,7 +23,7 @@
 |1st|26|27|[28](https://drive.google.com/file/d/11ZiIg1i4nWOjM2E0ifOfS97Pl49yVyFN/view?usp=sharing)|29|30|
 |1st|2|[3](https://drive.google.com/file/d/183iMOIraFR6AhvWC20LfXTcuOM4dvRuo/view?usp=sharing)|[4](https://drive.google.com/file/d/1s0xLTMO_CjmCK7-3_1bI8gyIzQqPf4pc/view?usp=sharing)|[5](https://drive.google.com/file/d/17YQJT3Lu28qrUwqC1sNXM9tjXX8NrgFB/view?usp=sharing)|6|
 |2st|9|10|[11](https://drive.google.com/file/d/151_DInTBIDh1Vyh4NXg5B8fuh5ikFP3e/view?usp=sharing)|[12](https://drive.google.com/file/d/17MWOyqB6o1HbmId7CSgnBKS413ktyvxw/view?usp=sharing)|13|
-|2st|16|17|18|19|20|
+|2st|[16](https://drive.google.com/drive/u/0/folders/1-uyvKtz0VJ1zqyxYapDPtc27gpzlRb6O)|17|18|19|20|
 |2st/3rd|23|24|25|26|27|
 
 <b>Sprint Plan & Report & Retrospective </b>  
