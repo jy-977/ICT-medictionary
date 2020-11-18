@@ -105,8 +105,12 @@
 |         |                |                                         |         |              |      |
 | 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Marc    | 1.5          |      |
 | 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          |      |
-| 2       |10 NOV - 25 NOV | Scrum Sprint KANBAN UPDATE              | Marc    | 2            |      |
-| 2       |10 NOV - 25 NOV | Scrum Retrospective                     | Yoon    | 1.5          | Done |
+| 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            |      |
+| 2       |10 NOV - 25 NOV | Update database model documentation     |         | 5            |      |
+| 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            |      |
+| 2       |10 NOV - 25 NOV | Update the cashflow documentation       |         | 8            |      |
+| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            |         | 5            |      |
+| 2       |10 NOV - 25 NOV | Scrum Retrospective                     | Yoon    | 1.5          | In progress |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |      |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            |      |
 | 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          |      |
