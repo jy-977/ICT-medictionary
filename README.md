@@ -88,12 +88,12 @@
 |:--------|:---------------|:----------------------------------------|:--------|:-------------|----------|
 | 1       |19 OCT - 09 NOV | Sprint meeting managing                 | Yoon    | 1.5          | Done |
 | 1       |19 OCT - 09 NOV | Presentation resource & presentatin     | Yoon    | 4.5          | Done |
-| 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
-| 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 2.5          | Done     |
-| 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | Done     |
+| 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done |
+| 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 2.5          | Done |
+| 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 6            | Done |
 | 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | Done |
-| 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | ?            | Done     |
-| 1       |19 OCT - 09 NOV | DB data model                           | Marc    | 6.5          | Done     |
+| 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | ?            | Done |
+| 1       |19 OCT - 09 NOV | DB data model                           | Marc    | 6.5          | Done |
 | 1       |19 OCT - 09 NOV | F0 : sign up with use0rname / pw        |Eyad,Marc| 2            | Done |
 | 1       |19 OCT - 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 1.5          | Done |
 | 1       |19 OCT - 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | Done |
@@ -105,23 +105,28 @@
 |         |                |                                         |         |              |      |
 | 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Marc    | 1.5          |      |
 | 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          |      |
+| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 1.5          | In progress |
+| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | In progress |
 | 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            |      |
 | 2       |10 NOV - 25 NOV | Update database model documentation     |         | 5            |      |
 | 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            |      |
 | 2       |10 NOV - 25 NOV | Update the cashflow documentation       |         | 8            |      |
-| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            |         | 5            |      |
-| 2       |10 NOV - 25 NOV | Scrum Retrospective                     | Yoon    | 1.5          | In progress |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |      |
-| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            |      |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          |      |
-| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | 8            |      |
-| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          |      |
-| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            |      |
+| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | In progress |
+| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | In progress |
+| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          | In progress |
+| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | 8            | In progress |
+| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | In progress |
+| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | In progress |
 |         |                |                                         |         |              |      |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |      |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |      |
-| 2       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |      |
-| 2       |30 NOV - 22 DEC | Scrum Retrospective                     | Marc    | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Improve GUI                             |         |              |      |
+| 3       |30 NOV - 22 DEC | Merge the code (function)               |         |              |      |
+
 
 
 
