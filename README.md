@@ -6,10 +6,10 @@
 ### :rainbow: Team <Dr.Strangers> Contributors
 | Assistant  | 1st S.P Role  | 2nd S.P Role  |  
 |------------|-------|-------|
-|[Jeongyun Lee](https://github.com/jy-977) |UI Developer |Scrum master|
-|[Marc Visa](https://github.com/mvp17) | Scrum Master |General Expert| 
-|[Ronnel Mattew](https://github.com/ron7858) | Finacial Expert | Fianacial Expert |   
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer | Developer |
+|[Jeongyun Lee](https://github.com/jy-977) | Scrum master | UI Developer |
+|[Marc Visa](https://github.com/mvp17) |General Expert | Scrum Master | 
+|[Ronnel Mattew](https://github.com/ron7858) | Fianacial Expert | Finacial Expert |   
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Developer | Backend Developer|
 
 ## :memo: Documents :memo: 
 <b>Presentation</b>
