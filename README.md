@@ -105,19 +105,19 @@
 |         |                |                                         |         |              |      |
 | 2       |10 NOV - 25 NOV | Sprint meeting managing                 | Marc    | 1.5          |      |
 | 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          |      |
-| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 1.5          | In progress |
-| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | In progress |
+| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 1.5          | on going|
+| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | on going |
 | 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            |      |
 | 2       |10 NOV - 25 NOV | Update database model documentation     |         | 5            |      |
 | 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            |      |
 | 2       |10 NOV - 25 NOV | Update the cashflow documentation       |         | 8            |      |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentatin     |         | 4.5          |      |
-| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | In progress |
-| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | In progress |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          | In progress |
-| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | 8            | In progress |
-| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | In progress |
-| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | In progress |
+| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | on going |
+| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | on going |
+| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          | on going |
+| 2       |10 NOV - 25 NOV | Building the DB                         | Eyad    | 8            | on going |
+| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | on going |
+| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | on going |
 |         |                |                                         |         |              |      |
 | 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |      |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |      |
