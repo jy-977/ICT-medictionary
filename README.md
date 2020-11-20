@@ -44,7 +44,7 @@
 
 <b>ETC</b>  
 [Use Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
-[Use Case Description](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
+[Use Case Description](https://docs.google.com/document/d/1pj4SVrirGl73U09tpOuPa3YkjShXZWVA0gqE5-yz8CI/edit?usp=sharing) |
 [User stories](https://docs.google.com/document/d/178I4GFFEglWldp21qo7pgHYZH8e5FPbbvAqB-eMqFPQ/edit?usp=sharing) |
 [Finanacial model](https://drive.google.com/file/d/1IqXhbGNB2awalN9h0mpop3EdCRJC8l8B/view?usp=sharing) |
 [Financial explanation](https://drive.google.com/file/d/1mEWx90YDgDks7_aOLVIns7IOrJMkTJZ-/view?usp=sharing) |
