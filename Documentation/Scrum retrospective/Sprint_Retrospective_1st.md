@@ -11,6 +11,8 @@
 
 | Team Member  | Issue Found  |  
 |---|---|
+| All | Team Communication : we had meeting every week in person, and online meeting almost everyday!|
+| All | EQAUL CONTRIBUTION : Everyone contributes equally. Trying to help each other|
 | All  | PRESENT TIME DISTRIBUTION : Couldn't distribute the time for each part equally  |   
 | FE   | FINANCIAL SUMMARY : THe professors said "I couldn't follow you"  |
 | S.M  | PROJECT SUMMARY : Hard to remember what is the project for |  
