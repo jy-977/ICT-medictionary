@@ -26,21 +26,22 @@
 |2st|[16](https://drive.google.com/file/d/1FkSJfouPgPylDvIpIelKDd1EHBA1ILL9/view?usp=sharing)|17|[18](https://drive.google.com/file/d/1TqU-GvqlyMMBHSns_cltHFl61Lk9aVKp/view?usp=sharing)|19|[20](https://drive.google.com/file/d/1NFLmNMxRdExcD3NHSqRdDe6_PYSQ7AbP/view?usp=sharing)|
 |2st/3rd|[23](https://drive.google.com/file/d/1-QYOJwTHA-ImqekavynH0WbRcGw2_nWm/view?usp=sharing)|24|25|26|27|
 
-<b>Sprint Plan & Report & Retrospective </b>  
+🔹<b>Sprint Plan & Report & Retrospective </b>  
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
-[1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) |  
+[1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) | 
 [1st sprint retrospective](https://drive.google.com/file/d/1Jf_6oyCLwRaBC1rgnGqHERNL39PBYh4K/view?usp=sharing) |
+[1st sprint review]
 
 2nd sprint plan |
 2nd sprint report |
 2nd sprint retrosective |
 
-<b>Technical Model</b>  
+🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1ZAh9LFS-nwwYFutrp7EiR9g_zu90jlM3/view?usp=sharing)
 
-<b>ETC</b>  
+🔹<b>ETC</b>  
 [Use Case Diagram](https://drive.google.com/file/d/1bODl9jrMSTCqfb3l5TwXdCvh-gMQEJEg/view?usp=sharing) |
 [Use Case Description](https://docs.google.com/document/d/1pj4SVrirGl73U09tpOuPa3YkjShXZWVA0gqE5-yz8CI/edit?usp=sharing) |
 [User stories](https://docs.google.com/document/d/178I4GFFEglWldp21qo7pgHYZH8e5FPbbvAqB-eMqFPQ/edit?usp=sharing) |
@@ -104,20 +105,20 @@
 | 2       |10 NOV - 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 1.5          | On going |
 | 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          | On going |
 | 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 1.5          | on going|
-| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | on going |
-| 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            |      |
-| 2       |10 NOV - 25 NOV | Update database model documentation     |         | 5            |      |
+| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | Done |
+| 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            | on going |
+| 2       |10 NOV - 25 NOV | Update database model documentation     | Eyad    | 5            | on going |
 | 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            | Done |
-| 2       |10 NOV - 25 NOV | Update the cashflow documentation       | Ron     | 8            |      |
-| 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 4.5          |      |
+| 2       |10 NOV - 25 NOV | Update the cashflow documentation       | Ron     | 8            | on going |
+| 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 4.5          | on going |
 | 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | on going |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | on going |
 | 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          | on going |
 | 2       |10 NOV - 25 NOV | Connection to API                       | Eyad    | 8            | DONE |
-| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | on going |
-| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | on going |
+| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | DONE |
+| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | 50% DONE |
 |         |                |                                         |         |              |      |
-| 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Yoon    | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Sprint meeting managing                 |         | 1.5          |      |
 | 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |      |
 | 3       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |      |
 | 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1.5          |      |
