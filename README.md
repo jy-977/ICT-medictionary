@@ -32,7 +32,6 @@
 [1st sprint retrospective](https://drive.google.com/file/d/1Jf_6oyCLwRaBC1rgnGqHERNL39PBYh4K/view?usp=sharing) |
 [1st sprint review]
 
-2nd sprint plan |
 2nd sprint report |
 2nd sprint retrosective |
 
