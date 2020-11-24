@@ -48,7 +48,8 @@
 [Financial model](https://drive.google.com/file/d/1IqXhbGNB2awalN9h0mpop3EdCRJC8l8B/view?usp=sharing) |
 [Financial explanation](https://drive.google.com/file/d/1mEWx90YDgDks7_aOLVIns7IOrJMkTJZ-/view?usp=sharing) |
 
-[Product Backlog and Sprint backlog tasks for Sprint 2] (https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing)
+
+[Product Backlog and Sprint backlog tasks for Sprint 2](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing)
 ## 🚩 Product Backlog items (PBI) 🚩
 
 <b>[Function 0 : Sign up & Sign in]</b>
