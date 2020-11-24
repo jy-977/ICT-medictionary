@@ -30,8 +30,9 @@
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
 [1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) | 
 [1st sprint retrospective](https://drive.google.com/file/d/1Jf_6oyCLwRaBC1rgnGqHERNL39PBYh4K/view?usp=sharing) |
-[1st sprint review]
+[1st sprint review](https://drive.google.com/file/d/1B7xvNmypyyHiJZaYzI5mzwHHtaIpIM5u/view?usp=sharing) |
 
+[2nd sprint planning](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing) | 
 2nd sprint report |
 2nd sprint retrosective |
 
@@ -49,7 +50,6 @@
 [Financial explanation](https://drive.google.com/file/d/1mEWx90YDgDks7_aOLVIns7IOrJMkTJZ-/view?usp=sharing) |
 
 
-[Product Backlog and Sprint backlog tasks for Sprint 2](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing)
 ## 🚩 Product Backlog items (PBI) 🚩
 
 <b>[Function 0 : Sign up & Sign in]</b>
