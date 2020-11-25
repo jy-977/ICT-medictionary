@@ -33,7 +33,7 @@
 [1st sprint review](https://drive.google.com/file/d/1B7xvNmypyyHiJZaYzI5mzwHHtaIpIM5u/view?usp=sharing) |
 
 [2nd sprint planning](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing) | 
-2nd sprint report |
+[2st sprint report](https://drive.google.com/file/d/1wsCth6iAp1BGfDs1Hfx0J573-h2GcGgK/view?usp=sharing) | 
 2nd sprint retrosective |
 
 🔹<b>Technical Model</b>  
