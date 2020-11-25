@@ -39,7 +39,7 @@
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
-[General System Architecture](https://drive.google.com/file/d/1ZAh9LFS-nwwYFutrp7EiR9g_zu90jlM3/view?usp=sharing) |
+[General System Architecture](https://drive.google.com/file/d/1Qx0BuGmR_1of8bC9yLiAe7_LJbbCTS2V/view?usp=sharing) |
 [Admin part report](https://docs.google.com/document/d/1_8dZmrKGh5G2noeM1RLaqBBHyImPHuq3sOoFWmk3FzI/edit?usp=sharing)
 
 🔹<b>ETC</b>  
