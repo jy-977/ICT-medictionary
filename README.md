@@ -31,6 +31,7 @@
 [1st sprint report](https://docs.google.com/document/d/1R7vmoJl4lJgjbFywHO91dX8DwX_pv4040yhadprlZSM/edit?usp=sharing) | 
 [1st sprint retrospective](https://drive.google.com/file/d/1Jf_6oyCLwRaBC1rgnGqHERNL39PBYh4K/view?usp=sharing) |
 [1st sprint review](https://drive.google.com/file/d/1B7xvNmypyyHiJZaYzI5mzwHHtaIpIM5u/view?usp=sharing) |
+[Sprint2 app full video](https://drive.google.com/file/d/1E4aPLU0yKzt5TEn8jvypnLR_bqhvTFwe/view?usp=sharing) | 
 
 [2nd sprint planning](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing) | 
 [2st sprint report](https://drive.google.com/file/d/1wsCth6iAp1BGfDs1Hfx0J573-h2GcGgK/view?usp=sharing) | 
