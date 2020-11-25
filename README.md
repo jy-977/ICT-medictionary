@@ -78,13 +78,13 @@
 | 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 2            | DONE |
 | 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 2            | DONE |
 | 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            | DONE |
-| 2       |10 NOV - 25 NOV | Update database model documentation     | Eyad    | 5            | on going |
+| 2       |10 NOV - 25 NOV | Update database model documentation     | Ron     | 5            | on going |
 | 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            | Done |
-| 2       |10 NOV - 25 NOV | Update the cashflow excel               | Ron     | 5            | on going |
-| 2       |10 NOV - 25 NOV | Update Financial documentation          | Ron     | 3            | on going |
+| 2       |10 NOV - 25 NOV | Update the cashflow excel               | Ron     | 5            | DONE |
+| 2       |10 NOV - 25 NOV | Update Financial documentation          | Ron     | 3            | DONE |
 | 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 5            | on going |
 | 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | on going |
-| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | on going |
+| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | DONE |
 | 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 3            | on going |
 | 2       |10 NOV - 25 NOV | Connection to API                       | Eyad    | 8            | DONE |
 | 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE |
