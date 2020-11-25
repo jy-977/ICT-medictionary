@@ -13,7 +13,6 @@ class ListAdapter(var mCtx:Context, var resources:Int, var items:List<Model>):Ar
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater:LayoutInflater = LayoutInflater.from(mCtx)
         val view:View=layoutInflater.inflate(resources,null)
-
         val imageView:ImageView = view.findViewById(R.id.imageBox)
         val titleTextView:TextView = view.findViewById(R.id.nameTxt)
         val descriptionTextView:TextView = view.findViewById(R.id.desTxt)

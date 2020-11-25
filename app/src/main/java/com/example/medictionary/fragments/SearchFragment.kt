@@ -35,9 +35,6 @@ class SearchFragment : Fragment() {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_search, container, false)
         try{
-
-            //val db= FirebaseFirestore.getInstance()
-            //val shapesRef= db.collection("medicines")
             var shapeSpinner= root.findViewById<View>(R.id.shapeSpinner) as Spinner
             val colorSpinner=root.findViewById<View>(R.id.colorSpinner) as Spinner
             val shapes= arrayListOf<String>("CAPSULE","DOUBLE CIRCLE","CLOVER","TRIANGLE","FREEFORM","SQUARE","BULLET","HEXAGON (6 SIDED)","OCTAGON (8 SIDED)","DIAMOND","TRAPEZOID","PENTAGON (5 SIDED)","RECTANGLE","TEAR","OVAL","ROUND")
@@ -69,12 +66,15 @@ class SearchFragment : Fragment() {
             val searchByCharBtn = root.findViewById<View>(R.id.searchCharBtn) as Button
             val codeTxt = root.findViewById<View>(R.id.codeEt) as EditText
             searchByCharBtn.setOnClickListener {
-                val intent = Intent(activity, SearchListActivity::class.java)
-                intent.putExtra("type", "byChar")
-                intent.putExtra("color", colorSpinner.selectedItem.toString())
-                intent.putExtra("shape", shapeSpinner.selectedItem.toString())
-                intent.putExtra("code", codeTxt.text.toString())
-                startActivity(intent);
+                if (codeTxt.text.isNotEmpty() || codeTxt.text.isNotBlank()) {
+                    val intent = Intent(activity, SearchListActivity::class.java)
+                    intent.putExtra("type", "byChar")
+                    intent.putExtra("color", colorSpinner.selectedItem.toString())
+                    intent.putExtra("shape", shapeSpinner.selectedItem.toString())
+                    intent.putExtra("code", codeTxt.text.toString())
+                    startActivity(intent);
+                }else
+                    showAlert("Code field should not be empty")
 
             }
 

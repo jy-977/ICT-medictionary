@@ -4,7 +4,6 @@ import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.medictionary.fragments.NotificationFragment
 import com.example.medictionary.fragments.PillBoxFragment
 import com.example.medictionary.fragments.SearchFragment
 import kotlinx.android.synthetic.main.activity_home.*
@@ -17,7 +16,6 @@ enum class ProviderType {
 }
 
 class HomeActivity : AppCompatActivity() {
-    private val notificationFragment= NotificationFragment()
     private val searchFragment=SearchFragment()
     private val pillBoxFragment=PillBoxFragment()
 
@@ -30,7 +28,6 @@ class HomeActivity : AppCompatActivity() {
         replaceFragment(searchFragment)
         bottm_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.ic_notification -> replaceFragment (notificationFragment)
                 R.id.ic_search -> replaceFragment (searchFragment)
                 R.id.ic_pillbox -> replaceFragment (pillBoxFragment)
             }

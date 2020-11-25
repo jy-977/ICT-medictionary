@@ -1,9 +1,11 @@
 package com.example.medictionary
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -27,6 +29,7 @@ class PillInfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pillinfo)
         var bundle = intent.extras
         var id = bundle?.getString("itemId")
+        var setalarm = findViewById<View>(R.id.setAlarm)as Button
         var nameTxt = findViewById<View>(R.id.medicineName)as TextView
         var description = findViewById<View>(R.id.description)as TextView
         var imprint = findViewById<View>(R.id.imprint)as TextView
@@ -38,6 +41,7 @@ class PillInfoActivity : AppCompatActivity() {
         var strength = findViewById<View>(R.id.strength)as TextView
         var ingredients = findViewById<View>(R.id.ingredients)as TextView
         val imageView: ImageView = findViewById(R.id.person)as ImageView
+        var medName=""
 
             val retrofit = Retrofit.Builder().addConverterFactory(GsonConverterFactory.create()).baseUrl(" https://datadiscovery.nlm.nih.gov/").build()
             val jsonPlaceholderApi = retrofit.create(JsonPlaceholderApi::class.java)
@@ -48,6 +52,7 @@ class PillInfoActivity : AppCompatActivity() {
                     val Medicine = response.body()
                     if (Medicine != null) {
                         for (details in Medicine){
+                            medName=details.medicine_name
                             nameTxt.text=details.medicine_name
                             Glide.with(this@PillInfoActivity).load("https://pillbox.nlm.nih.gov/assets/pills/large/"+details.splimage+".jpg").placeholder(R.drawable.download).into(imageView)
                             val content="Pill is with imprint " +details.splimprint+", "+details.splcolor_text.toLowerCase()+ " color and "+ details.splshape_text +" shape. It has been identified as "+details.rxstring+". It is supplied by "+ details.author +" corporation."
@@ -69,7 +74,13 @@ class PillInfoActivity : AppCompatActivity() {
                 }
 
             })
-
+            setalarm.setOnClickListener {
+                val intent = Intent(this, SetAlarmActivity::class.java).apply {
+                    putExtra("medId", id.toString())
+                    putExtra("medName", medName)
+                }
+                startActivity(intent)
+            }
     }
 }
 

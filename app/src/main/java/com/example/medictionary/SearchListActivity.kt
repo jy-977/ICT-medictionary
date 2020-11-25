@@ -45,16 +45,8 @@ class SearchListActivity : AppCompatActivity() {
             var color = bundle?.getString("color")
             var shape = bundle?.getString("shape")
             var code = bundle?.getString("code")
-            if (code.toString().isEmpty()) {
-                val myCall: Call<List<Medicine>> = jsonPlaceholderApi.getMedicinesByCahrWithoutCode(shape.toString(), color.toString())
-                getRowsAPI(myCall,list,idsList,listView)
-            }else{
-                val myCall: Call<List<Medicine>> = jsonPlaceholderApi.getMedicinesByCahr(shape.toString(), color.toString(), code.toString())
-                getRowsAPI(myCall,list,idsList,listView)
-            }
-
-
-
+            val myCall: Call<List<Medicine>> = jsonPlaceholderApi.getMedicinesByCahr(shape.toString(), color.toString(), code.toString())
+            getRowsAPI(myCall,list,idsList,listView)
         }
 
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
@@ -94,6 +86,7 @@ class SearchListActivity : AppCompatActivity() {
 
                 }
                 listView.adapter = ListAdapter(this@SearchListActivity, R.layout.row, list)
+
                 if(list.size==0)
                     showAlert("No results")
             }
