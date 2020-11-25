@@ -1,5 +1,5 @@
 <h1 align="center">
-  Medictionary Project
+  💊 Medictionary Project 💊
 </h1>
 <h3>UDL - ICT Project, IT Project Management</h3>
 
@@ -71,29 +71,31 @@
 | 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 8            | Done |
 | 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 5            | Done |
 | 1       |19 OCT - 09 NOV | F1 : List up pills                      |Eyad,Marc| 5            | Done |
-|         |                |                                         |         |              |      |
-| 2       |10 NOV - 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 1.5          | DONE |
-| 2       |10 NOV - 25 NOV | Admin report                            | Marc,Eyad  | 4         | on going |
-| 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 1.5          | DONE |
-| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 1.5          | DONE |
-| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 1.5          | Done |
+|         |                |           18 tasks                      |         | 74 in total  |      |
+| 2       |10 NOV - 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 2            | DONE |
+| 2       |10 NOV - 25 NOV | Admin report                            | Marc,Eyad| 5           | DONE |
+| 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 2            | DONE |
+| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 2            | DONE |
+| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 2            | Done |
 | 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            | on going |
+| 2       |10 NOV - 25 NOV | Update MOCK UP                          | Yoon    | 3            | on going |
 | 2       |10 NOV - 25 NOV | Update database model documentation     | Eyad    | 5            | on going |
 | 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            | Done |
-| 2       |10 NOV - 25 NOV | Update the cashflow documentation       | Ron     | 8            | on going |
-| 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 4.5          | on going |
+| 2       |10 NOV - 25 NOV | Update the cashflow excel               | Ron     | 5            | on going |
+| 2       |10 NOV - 25 NOV | Update Financial documentation          | Ron     | 3            | on going |
+| 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 5            | on going |
 | 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | on going |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | on going |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 2.5          | on going |
+| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 3            | on going |
 | 2       |10 NOV - 25 NOV | Connection to API                       | Eyad    | 8            | DONE |
-| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 2.5          | DONE |
-| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | 50% DONE |
+| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE |
+| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE |
 |         |                |                                         |         |              |      |
-| 3       |30 NOV - 22 DEC | Sprint meeting managing                 |         | 1.5          |      |
-| 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 4.5          |      |
-| 3       |30 NOV - 22 DEC | Scrum Planning                          |         | 1.5          |      |
-| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1.5          |      |
-| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1.5          |      |
+| 3       |30 NOV - 22 DEC | Sprint meeting managing                 |         | 2          |      |
+| 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 5          |      |
+| 3       |30 NOV - 22 DEC | Scrum Planning                          |         | 2          |      |
+| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 2          |      |
+| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 2          |      |
 | 3       |30 NOV - 22 DEC | Improve GUI                             |         |              |      |
 | 3       |30 NOV - 22 DEC | Merge the code (function)               |         |              |      |
 
