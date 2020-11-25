@@ -85,7 +85,7 @@
 | 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 5            | DONE |
 | 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | on going |
 | 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | DONE |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 3            | on going |
+| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 3            | DONE |
 | 2       |10 NOV - 25 NOV | Connection to API                       | Eyad    | 8            | DONE |
 | 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE |
 | 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE |
