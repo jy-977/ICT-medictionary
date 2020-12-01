@@ -1,6 +1,6 @@
-package com.example.medictionary
+package com.example.medictionary.extra
 
-import com.example.medictionary.model.Medicine
+import com.example.medictionary.models.Medicine
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

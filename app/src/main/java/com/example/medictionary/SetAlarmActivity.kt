@@ -8,6 +8,7 @@ import android.widget.TimePicker
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.medictionary.extra.DBHandler
 import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
@@ -29,7 +30,7 @@ class SetAlarmActivity : AppCompatActivity() {
             val sdf = SimpleDateFormat("dd/M/yyyy")
             val currentDate = sdf.format(Date())
             val datetime = " " + timePicker.hour.toString() + ":" + timePicker.minute.toString()
-            var dbHelper=DBHandler(this)
+            var dbHelper= DBHandler(this)
             saveBtn.setOnClickListener {
                 try { val status = "Enabled"
                     dbHelper.addAlarm(datetime,name.toString(),id.toString(),number.text.toString().toInt(),days.text.toString().toInt(),hours.text.toString().toInt(),status)

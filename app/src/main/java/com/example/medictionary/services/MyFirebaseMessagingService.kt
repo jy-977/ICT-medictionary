@@ -1,21 +1,17 @@
-package com.example.medictionary
+package com.example.medictionary.services
 
-import android.annotation.SuppressLint
 import android.app.NotificationChannel
-import android.os.Build
 import android.util.Log
 import com.google.firebase.messaging.RemoteMessage
-import android.content.Context.NOTIFICATION_SERVICE
 import android.app.NotificationManager
 import android.media.RingtoneManager
 import android.app.PendingIntent
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
-import android.net.Uri
 import androidx.core.app.NotificationCompat
-import android.widget.Toast
+import com.example.medictionary.HomeActivity
+import com.example.medictionary.R
 import com.google.firebase.messaging.FirebaseMessagingService
 
 

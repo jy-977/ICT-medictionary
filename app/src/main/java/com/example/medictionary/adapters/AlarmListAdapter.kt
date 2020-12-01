@@ -1,15 +1,12 @@
-package com.example.medictionary
+package com.example.medictionary.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.example.medictionary.R
+import com.example.medictionary.models.AlarmModel
 import kotlinx.android.synthetic.main.alarmrow.view.*
 
 class AlarmListAdapter(private val alarms:MutableList<AlarmModel>):RecyclerView.Adapter<AlarmListAdapter.ViewHolder>() {

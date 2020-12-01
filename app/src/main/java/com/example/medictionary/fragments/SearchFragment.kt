@@ -8,16 +8,8 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import com.example.medictionary.JsonPlaceholderApi
-import com.example.medictionary.ListAdapter
-import com.example.medictionary.Model
 import com.example.medictionary.R
 import com.example.medictionary.SearchListActivity
-import com.example.medictionary.model.Medicine
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.android.gms.tasks.Task
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.QuerySnapshot
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

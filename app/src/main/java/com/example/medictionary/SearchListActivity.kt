@@ -9,10 +9,10 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.size
-import com.example.medictionary.model.Medicine
-import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.row.*
+import com.example.medictionary.adapters.ListAdapter
+import com.example.medictionary.extra.JsonPlaceholderApi
+import com.example.medictionary.models.Medicine
+import com.example.medictionary.models.Model
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -68,7 +68,7 @@ class SearchListActivity : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
-    private  fun getRowsAPI(myCall: Call<List<Medicine>>,list:MutableList<Model>,idsList:MutableList<String>,listView:ListView){
+    private  fun getRowsAPI(myCall: Call<List<Medicine>>, list:MutableList<Model>, idsList:MutableList<String>, listView:ListView){
         myCall.enqueue(object : Callback<List<Medicine>> {
             override fun onResponse(
                     call: Call<List<Medicine>>,

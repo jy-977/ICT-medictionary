@@ -1,14 +1,13 @@
-package com.example.medictionary
+package com.example.medictionary.extra
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
 
 class DBHandler(context: Context):
-    SQLiteOpenHelper(context,DATABASE_NAME,null,1){
+    SQLiteOpenHelper(context, DATABASE_NAME,null,1){
     companion object {
 
        private val DATABASE_NAME = "PillBoxDatabase"

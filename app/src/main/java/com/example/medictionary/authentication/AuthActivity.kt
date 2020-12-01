@@ -1,4 +1,4 @@
-package com.example.medictionary
+package com.example.medictionary.authentication
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.medictionary.HomeActivity
+import com.example.medictionary.ProviderType
+import com.example.medictionary.R
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -155,7 +158,8 @@ class AuthActivity : AppCompatActivity() {
                                 FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
                                     if (it.isSuccessful) {
                                         showHome(it.result?.user?.email
-                                                ?: "", ProviderType.FACEBOOK)
+                                                ?: "", ProviderType.FACEBOOK
+                                        )
                                     } else {
                                         val errorMessage = "Facebook sign in account incorrect."
                                         showAlert(errorMessage)

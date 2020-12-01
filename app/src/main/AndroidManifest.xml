@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Medictionary">
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".authentication.ForgotPasswordActivity"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".SetAlarmActivity" />
         <activity android:name=".SearchListActivity" />
         <activity android:name=".PillInfoActivity" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".authentication.AuthActivity"
             android:theme="@style/SplashThem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,7 +47,7 @@
         </activity>
 
 
-        <service android:name=".MyFirebaseMessagingService"
+        <service android:name=".services.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>

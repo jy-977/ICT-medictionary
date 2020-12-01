@@ -1,4 +1,4 @@
-package com.example.medictionary.model
+package com.example.medictionary.models
 
 data class Medicine(
     val approval_code: String,
