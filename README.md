@@ -35,7 +35,7 @@
 
 [2nd sprint planning](https://drive.google.com/file/d/1Zc1yghoIVzLDVmnEP_m6lstF3fDjp8c2/view?usp=sharing) | 
 [2st sprint report](https://drive.google.com/file/d/1wsCth6iAp1BGfDs1Hfx0J573-h2GcGgK/view?usp=sharing) | 
-2nd sprint retrosective |
+2nd sprint retrospective |
 
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
