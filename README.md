@@ -5,7 +5,7 @@
 
 ### :rainbow: Team <Dr.Strangers> Contributors
 | Assistant  | 1st S.P Role  | 2nd S.P Role  | 3rd S.P Role |
-|------------|-------|-------|
+|------------|-------|-------|-----------|
 |[Jeongyun Lee](https://github.com/jy-977) | Scrum master | UI Developer | UI Developer |
 |[Marc Visa](https://github.com/mvp17) | General Expert | Scrum Master | General Expert |
 |[Ronnel Mattew](https://github.com/ron7858) | Financial Expert | Financial Expert | Scrum Master | 
