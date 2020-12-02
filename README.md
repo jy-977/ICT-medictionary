@@ -16,7 +16,7 @@
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
 [1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing)
 
-### Sprint 1 Daily Scrum Meetings Minutes
+### Daily Scrum Meetings Minutes
 |Sprint| MON  | TUE  | WED | THU | FRI |  
 |------|------|------|-----|-----|-----|
 |1st|19  |[20](https://drive.google.com/file/d/1Sx2DVcMGCMDhRI10E6aQQlypT2Npa1gR/view?usp=sharing)|[21](https://drive.google.com/file/d/1LzNk69qgWXFmMuOMFNKwtgyVLdeyQRV2/view?usp=sharing)|[22](https://drive.google.com/file/d/1eOpDW9gniyUWR3XhkFPgTja3E2e48mkl/view?usp=sharing)|[23](https://drive.google.com/file/d/1eHZL04T1TrlQafKuzYRpxs-29qaezw4w/view?usp=sharing)|
