@@ -102,13 +102,21 @@
 | 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE     |
 | 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE     |
 |         |                |                                         |         |              |          |
-| 3       |30 NOV - 22 DEC | Sprint meeting managing                 |         | 2            |          |
-| 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |         | 5            |          |
-| 3       |30 NOV - 22 DEC | Scrum Planning                          |         | 2            |          |
-| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 2            | DONE     |
-| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 2            | DONE     |
-| 3       |30 NOV - 22 DEC | Improve GUI                             |         |              |          |
-| 3       |30 NOV - 22 DEC | Merge the code (function)               |         |              |          |
+| 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Ron,Eyad| 2            | Ongoing  |
+| 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | Ongoing  |
+| 3       |30 NOV - 22 DEC | Scrum Planning                          |Eyad,Marc| 1            | DONE     |
+| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1            | DONE     |
+| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1            | DONE     |
+| 3       |30 NOV - 22 DEC | DEV : Improve the GUI                   |Yoon,Eyad| 13           | Ongoing  |
+| 3       |30 NOV - 22 DEC | DEV : Merge the code (function)         | Eyad    | 2            | DONE     |
+| 3       |30 NOV - 22 DEC | F2 : Running the Alarms                 | Eyad    | 8            | Ongoing  |
+| 3       |30 NOV - 22 DEC | F2 : Set sleep time for alarm           | Eyad    | 5            | Ongoing  |
+| 3       |30 NOV - 22 DEC | F3 : Create the survey form             | Eyad    | 1            |          |
+| 3       |30 NOV - 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            |          |
+| 3       |30 NOV - 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
+| 3       |30 NOV - 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
+| 3       |30 NOV - 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |          |
+| 3       |30 NOV - 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |          |
 
 
 ## 🚩 Product Backlog items (PBI) 🚩
