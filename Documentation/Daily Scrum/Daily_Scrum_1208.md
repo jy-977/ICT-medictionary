@@ -4,8 +4,8 @@
 |---|---|
 |[Jeongyun Lee](https://github.com/jy-977) |UI developer(Dev)|
 |[Marc Visa](https://github.com/mvp17) | General Expert(GE)|   
-|[Ronnel Mattew](https://github.com/ron7858) | Scrum Master(SM) |  
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer(DEV) |  
+|[Ronnel Mattew](https://github.com/ron7858) | Fianancial Expert(FE)|  
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Scrum Master(SM) |  
 ## Problems/Difficulties
 | Problem  | Task  | Owner | Description |
 |---|---|---|---|
