@@ -20,7 +20,7 @@
 | Type  | Description  | Owner | Deadline |
 |---|---|---|---|
 | D | P1 : We have to discuss that more with the professor's | All | - |
-| T | P2 : Every member should update and create an estimate time for his or her responsable issue|
+| T | P2 : Every member should update and create an estimate time for his or her responsable issue| ALL | - |
 | D | P3 : Yoon - Updating GUI / Ron : Financial part updates /Eyad : Runing alarm,creating survey | ALL | - |
 
 
