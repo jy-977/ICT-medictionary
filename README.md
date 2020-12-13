@@ -67,56 +67,56 @@
 | Sprint  | Date           |Task                                     | PIC     | Effort Point | status   |
 |:--------|:---------------|:----------------------------------------|:--------|:-------------|----------|
 |         |                |            16 tasks                     |         | 62 in total  |          |
-| 1       |19 OCT - 09 NOV | Sprint meeting managing                 | Yoon    | 2            | Done     |
-| 1       |19 OCT - 09 NOV | Presentation resource & presentatin     | Yoon    | 5            | Done     |
-| 1       |19 OCT - 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
-| 1       |19 OCT - 09 NOV | General Service Architecure             | Yoon    | 3            | Done     |
-| 1       |19 OCT - 09 NOV | Mock up                                 | Yoon    | 5            | Done     |
-| 1       |19 OCT - 09 NOV | Finantial model                         | Ron     | 8            | Done     |
-| 1       |19 OCT - 09 NOV | Looking for Alternative DB resource     | Yoon    | 3            | Done     |
-| 1       |19 OCT - 09 NOV | DB data model                           | Marc    | 5            | Done     |
-| 1       |19 OCT - 09 NOV | F0 : sign up with username / pw         |Eyad,Marc| 2            | Done     |
-| 1       |19 OCT - 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 2            | Done     |
-| 1       |19 OCT - 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | Done     |
-| 1       |19 OCT - 09 NOV | F0 : sign in with Facebook account      |Eyad,Marc| 2            | Done     |
-| 1       |19 OCT - 09 NOV | F1 : start menu                         |Eyad,Marc| 3            | Done     |
-| 1       |19 OCT - 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 8            | Done     |
-| 1       |19 OCT - 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 5            | Done     |
-| 1       |19 OCT - 09 NOV | F1 : List up pills                      |Eyad,Marc| 5            | Done     |
+| 1       |19 OCT- 09 NOV | Sprint meeting managing                 | Yoon    | 2            | Done     |
+| 1       |19 OCT- 09 NOV | Presentation resource & presentatin     | Yoon    | 5            | Done     |
+| 1       |19 OCT- 09 NOV | Sprint explanation                      | Eyad    | 2            | Done     |
+| 1       |19 OCT- 09 NOV | General Service Architecure             | Yoon    | 3            | Done     |
+| 1       |19 OCT- 09 NOV | Mock up                                 | Yoon    | 5            | Done     |
+| 1       |19 OCT- 09 NOV | Finantial model                         | Ron     | 8            | Done     |
+| 1       |19 OCT- 09 NOV | Looking for Alternative DB resource     | Yoon    | 3            | Done     |
+| 1       |19 OCT- 09 NOV | DB data model                           | Marc    | 5            | Done     |
+| 1       |19 OCT- 09 NOV | F0 : sign up with username / pw         |Eyad,Marc| 2            | Done     |
+| 1       |19 OCT- 09 NOV | F0 : sign in with username / pw         |Eyad,Marc| 2            | Done     |
+| 1       |19 OCT- 09 NOV | F0 : sign in with Google account        |Eyad,Marc| 2            | Done     |
+| 1       |19 OCT- 09 NOV | F0 : sign in with Facebook account      |Eyad,Marc| 2            | Done     |
+| 1       |19 OCT- 09 NOV | F1 : start menu                         |Eyad,Marc| 3            | Done     |
+| 1       |19 OCT- 09 NOV | F1 : search pill (search bar)           |Eyad,Marc| 8            | Done     |
+| 1       |19 OCT- 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 5            | Done     |
+| 1       |19 OCT- 09 NOV | F1 : List up pills                      |Eyad,Marc| 5            | Done     |
 |         |                |           17 tasks                      |         | 71 in total  |          |
-| 2       |10 NOV - 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 2            | DONE     |
-| 2       |10 NOV - 25 NOV | Admin report                            | Marc,Eyad| 5           | DONE     |
-| 2       |10 NOV - 25 NOV | Scrum Planning                          | Marc    | 2            | DONE     |
-| 2       |10 NOV - 25 NOV | Scrum Review - 1st sprint               | Yoon    | 2            | DONE     |
-| 2       |10 NOV - 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 2            | DONE     |
-| 2       |10 NOV - 25 NOV | Update General Architecture             | Yoon    | 5            | DONE     |
-| 2       |10 NOV - 25 NOV | Update database model documentation     | Ron     | 5            | DONE     |
-| 2       |10 NOV - 25 NOV | Update the use case diagram             | Ron     | 1            | Done     |
-| 2       |10 NOV - 25 NOV | Update the cashflow excel               | Ron     | 5            | DONE     |
-| 2       |10 NOV - 25 NOV | Update Financial documentation          | Ron     | 3            | DONE     |
-| 2       |10 NOV - 25 NOV | Presentation resource & presentation    |Marc,Yoon| 5            | DONE     |
-| 2       |10 NOV - 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | DONE     |
-| 2       |10 NOV - 25 NOV | F2 : setting alarms                     | Eyad    | 8            | DONE     |
-| 2       |10 NOV - 25 NOV | F2 : pill box                           | Eyad    | 3            | DONE     |
-| 2       |10 NOV - 25 NOV | Connection to API                       | Eyad    | 8            | DONE     |
-| 2       |10 NOV - 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE     |
-| 2       |10 NOV - 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE     |
+| 2       |10 NOV- 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 2            | DONE     |
+| 2       |10 NOV- 25 NOV | Admin report                            | Marc,Eyad| 5           | DONE     |
+| 2       |10 NOV- 25 NOV | Scrum Planning                          | Marc    | 2            | DONE     |
+| 2       |10 NOV- 25 NOV | Scrum Review - 1st sprint               | Yoon    | 2            | DONE     |
+| 2       |10 NOV- 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 2            | DONE     |
+| 2       |10 NOV- 25 NOV | Update General Architecture             | Yoon    | 5            | DONE     |
+| 2       |10 NOV- 25 NOV | Update database model documentation     | Ron     | 5            | DONE     |
+| 2       |10 NOV- 25 NOV | Update the use case diagram             | Ron     | 1            | Done     |
+| 2       |10 NOV- 25 NOV | Update the cashflow excel               | Ron     | 5            | DONE     |
+| 2       |10 NOV- 25 NOV | Update Financial documentation          | Ron     | 3            | DONE     |
+| 2       |10 NOV- 25 NOV | Presentation resource & presentation    |Marc,Yoon| 5            | DONE     |
+| 2       |10 NOV- 25 NOV | F2: set sleep time for alarm            | Eyad    | 5            | DONE     |
+| 2       |10 NOV- 25 NOV | F2 : setting alarms                     | Eyad    | 8            | DONE     |
+| 2       |10 NOV- 25 NOV | F2 : pill box                           | Eyad    | 3            | DONE     |
+| 2       |10 NOV- 25 NOV | Connection to API                       | Eyad    | 8            | DONE     |
+| 2       |10 NOV- 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE     |
+| 2       |10 NOV- 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE     |
 |         |                |                                         |         |              |          |
-| 3       |30 NOV - 22 DEC | Sprint meeting managing                 | Ron,Eyad| 2            | Ongoing  |
-| 3       |30 NOV - 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | Ongoing  |
-| 3       |30 NOV - 22 DEC | Scrum Planning                          |Eyad,Marc| 1            | DONE     |
-| 3       |30 NOV - 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1            | DONE     |
-| 3       |30 NOV - 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1            | DONE     |
-| 3       |30 NOV - 22 DEC | DEV : Improve the GUI                   |Yoon,Eyad| 13           | Ongoing  |
-| 3       |30 NOV - 22 DEC | DEV : Merge the code (function)         | Eyad    | 2            | DONE     |
-| 3       |30 NOV - 22 DEC | F2 : Running the Alarms                 | Eyad    | 8            | Ongoing  |
-| 3       |30 NOV - 22 DEC | F2 : Set sleep time for alarm           | Eyad    | 5            | Ongoing  |
-| 3       |30 NOV - 22 DEC | F3 : Create the survey form             | Eyad    | 1            |          |
-| 3       |30 NOV - 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            |          |
-| 3       |30 NOV - 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
-| 3       |30 NOV - 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
-| 3       |30 NOV - 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |          |
-| 3       |30 NOV - 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |          |
+| 3       |30 NOV- 22 DEC | Sprint meeting managing                 | Ron,Eyad| 2            | Ongoing  |
+| 3       |30 NOV- 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | Ongoing  |
+| 3       |30 NOV- 22 DEC | Scrum Planning                          |Eyad,Marc| 1            | DONE     |
+| 3       |30 NOV- 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1            | DONE     |
+| 3       |30 NOV- 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1            | DONE     |
+| 3       |30 NOV- 22 DEC | DEV : Improve the GUI                   |Yoon,Eyad| 13           | Ongoing  |
+| 3       |30 NOV- 22 DEC | DEV : Merge the code (function)         | Eyad    | 2            | DONE     |
+| 3       |30 NOV- 22 DEC | F2 : Running the Alarms                 | Eyad    | 8            | Ongoing  |
+| 3       |30 NOV- 22 DEC | F2 : Set sleep time for alarm           | Eyad    | 5            | Ongoing  |
+| 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            |          |
+| 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            |          |
+| 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
+| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
+| 3       |30 NOV- 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |          |
+| 3       |30 NOV- 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |          |
 
 
 ## 🚩 Product Backlog items (PBI) 🚩
