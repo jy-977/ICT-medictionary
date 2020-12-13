@@ -26,6 +26,8 @@ class SearchListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_searchlist)
         var bundle = intent.extras
         var type = bundle?.getString("type")
+        var email = bundle?.getString("email")
+        var provider = bundle?.getString("provider")
         val retrofit=Retrofit.Builder().addConverterFactory(GsonConverterFactory.create()).baseUrl(" https://datadiscovery.nlm.nih.gov/").build()
         val jsonPlaceholderApi=retrofit.create(JsonPlaceholderApi::class.java)
         var listView = findViewById<ListView>(R.id.custom_Lis_tView)
@@ -52,6 +54,8 @@ class SearchListActivity : AppCompatActivity() {
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
             val intent = Intent(this, PillInfoActivity::class.java).apply {
                 putExtra("itemId", idsList[position].toString())
+                putExtra("email", email.toString())
+                putExtra("provider", provider.toString())
         }
             startActivity(intent)
 

@@ -10,11 +10,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.example.medictionary.R
 import com.example.medictionary.SearchListActivity
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 
 class SearchFragment : Fragment() {
@@ -24,13 +19,15 @@ class SearchFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_search, container, false)
+        val bundle = arguments
+        val email = bundle!!.getString("email")
+        val provider = bundle!!.getString("provider")
         try{
             var shapeSpinner= root.findViewById<View>(R.id.shapeSpinner) as Spinner
             val colorSpinner=root.findViewById<View>(R.id.colorSpinner) as Spinner
-            val shapes= arrayListOf<String>("CAPSULE","DOUBLE CIRCLE","CLOVER","TRIANGLE","FREEFORM","SQUARE","BULLET","HEXAGON (6 SIDED)","OCTAGON (8 SIDED)","DIAMOND","TRAPEZOID","PENTAGON (5 SIDED)","RECTANGLE","TEAR","OVAL","ROUND")
-            val colors= arrayListOf<String>("PINK","YELLOW","ORANGE","BROWN","BLUE","RED","WHITE","PURPLE","GREEN","GRAY","BLACK","TURQUOISE")
+            val shapes= arrayListOf<String>("CAPSULE", "DOUBLE CIRCLE", "CLOVER", "TRIANGLE", "FREEFORM", "SQUARE", "BULLET", "HEXAGON (6 SIDED)", "OCTAGON (8 SIDED)", "DIAMOND", "TRAPEZOID", "PENTAGON (5 SIDED)", "RECTANGLE", "TEAR", "OVAL", "ROUND")
+            val colors= arrayListOf<String>("PINK", "YELLOW", "ORANGE", "BROWN", "BLUE", "RED", "WHITE", "PURPLE", "GREEN", "GRAY", "BLACK", "TURQUOISE")
             val shapeAdapter= ArrayAdapter(
                     activity!!,
                     android.R.layout.simple_spinner_item,
@@ -49,6 +46,8 @@ class SearchFragment : Fragment() {
                     val intent = Intent(activity, SearchListActivity::class.java)
                     intent.putExtra("type", "byName")
                     intent.putExtra("name", nameEt.text.toString())
+                    intent.putExtra("email", email.toString())
+                    intent.putExtra("provider", provider.toString())
                     startActivity(intent);
 
 
@@ -64,6 +63,8 @@ class SearchFragment : Fragment() {
                     intent.putExtra("color", colorSpinner.selectedItem.toString())
                     intent.putExtra("shape", shapeSpinner.selectedItem.toString())
                     intent.putExtra("code", codeTxt.text.toString())
+                    intent.putExtra("email", email.toString())
+                    intent.putExtra("provider", provider.toString())
                     startActivity(intent);
                 }else
                     showAlert("Code field should not be empty")

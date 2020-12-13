@@ -28,6 +28,8 @@ class PillInfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pillinfo)
         var bundle = intent.extras
         var id = bundle?.getString("itemId")
+        var email = bundle?.getString("email")
+        var provider = bundle?.getString("provider")
         var setalarm = findViewById<View>(R.id.setAlarm)as Button
         var nameTxt = findViewById<View>(R.id.medicineName)as TextView
         var description = findViewById<View>(R.id.description)as TextView
@@ -77,6 +79,9 @@ class PillInfoActivity : AppCompatActivity() {
                 val intent = Intent(this, SetAlarmActivity::class.java).apply {
                     putExtra("medId", id.toString())
                     putExtra("medName", medName)
+                    putExtra("email", email)
+                    putExtra("provider", provider)
+
                 }
                 startActivity(intent)
             }
