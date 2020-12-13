@@ -15,6 +15,7 @@
 <b>Presentation</b>
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
 [1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing)
+[2nd Presentation](https://drive.google.com/file/d/1oKPeQSKWkR3bJv9vVaVpMC6IDoFwZVS6/view?usp=sharing)
 
 ### Daily Scrum Meetings Minutes
 |Sprint| MON  | TUE  | WED | THU | FRI |  
@@ -41,6 +42,11 @@
 [2st sprint report](https://drive.google.com/file/d/1wsCth6iAp1BGfDs1Hfx0J573-h2GcGgK/view?usp=sharing) | 
 [2nd sprint retrospective](https://drive.google.com/file/d/1XTSQSSi4CYXdV_F3WsSdyCH5tiGHFnh2/view?usp=sharing) |
 [2nd sprint review](https://drive.google.com/file/d/100FBOq8lmPEg7_4X-vQ6Yh5D2-ykLfx1/view?usp=sharing)
+
+[3rd sprint planning](https://drive.google.com/file/d/1sQHxSAMCyuDsk7aOkLE52rkXrk4_OL7Y/view?usp=sharing) | 
+[3rd sprint report] | 
+[3rd sprint retrospective] |
+[3rd sprint review]
 
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
