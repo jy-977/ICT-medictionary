@@ -28,6 +28,7 @@
 |3rd|30|1|2|3|4|
 |3rd|7|[8](https://drive.google.com/file/d/1KSLGfl9IrIp7_3tnUVWIQeTvPu97wmpf/view?usp=sharing)|[9](https://drive.google.com/file/d/1rT6YGm9F_y76zy6PHYtiHRxsXNpfSlLn/view?usp=sharing)|10|11|
 |3rd|14|15|16|17|18|
+|3rd|21|22|23|24|25|
 
 🔹<b>Sprint Plan & Report & Retrospective </b>  
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
