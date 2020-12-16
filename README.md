@@ -8,7 +8,7 @@
 |------------|-------|-------|-----------|
 |[Jeongyun Lee](https://github.com/jy-977) | Scrum master | UI Developer | UI Developer |
 |[Marc Visa](https://github.com/mvp17) | General Expert | Scrum Master | General Expert |
-|[Ronnel Mattew](https://github.com/ron7858) | Financial Expert | Financial Expert |Financial Expert | 
+|[Ronnel Mathew](https://github.com/ron7858) | Financial Expert | Financial Expert |Financial Expert | 
 |[Eyad Al Hafi](https://github.com/eyadfhafi) | Developer | Backend Developer | Scrum master |
 
 ## :memo: Documents :memo: 
