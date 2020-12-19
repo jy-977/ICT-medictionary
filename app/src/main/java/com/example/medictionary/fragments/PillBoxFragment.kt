@@ -108,8 +108,6 @@ class PillBoxFragment : Fragment(), CellClickListener {
     }
 
     private fun createNotificationChannel(CHANNEL_ID: String) {
-// Create the NotificationChannel, but only on API 26+ because
-// the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name: CharSequence = CHANNEL_ID
             val description = "pills"
@@ -126,8 +124,6 @@ class PillBoxFragment : Fragment(), CellClickListener {
                 .setUsage(AudioAttributes.USAGE_ALARM)
                 .build()
             channel.setSound(Uri.parse("android.resource://${activity!!.packageName}/$idAudio"), audioAttributes)
-            // Register the channel with the system; you can't change the importance
-            // or other notification behaviours after this
             val notificationManager = activity!!.getSystemService(NotificationManager::class.java)
             notificationManager!!.createNotificationChannel(channel)
 

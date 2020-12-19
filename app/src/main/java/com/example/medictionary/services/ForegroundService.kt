@@ -23,7 +23,6 @@ class ForegroundService : Service() {
 
         val element = intent!!.extras!!.getString("element")
         val idAudio = R.raw.ringtone
-        // Create an explicit intent for an Activity in your app
         val intent = Intent(baseContext, HomeActivity::class.java)
         val pendingIntent: PendingIntent = PendingIntent.getActivity(baseContext, 0, intent, 0)
 
