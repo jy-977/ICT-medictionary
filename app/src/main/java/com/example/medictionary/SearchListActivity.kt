@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.medictionary.adapters.ListAdapter
-import com.example.medictionary.extra.JsonPlaceholderApi
+import com.example.medictionary.interfaces.JsonPlaceholderApi
 import com.example.medictionary.models.Medicine
 import com.example.medictionary.models.Model
 import retrofit2.Call

@@ -1,4 +1,4 @@
-package com.example.medictionary.extra
+package com.example.medictionary.interfaces
 
 import com.example.medictionary.models.Medicine
 import retrofit2.Call

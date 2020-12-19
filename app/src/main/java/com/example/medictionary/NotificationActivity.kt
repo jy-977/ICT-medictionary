@@ -9,7 +9,5 @@ class NotificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notification2)
 
-
-
     }
 }

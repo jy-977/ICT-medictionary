@@ -10,6 +10,7 @@ import com.example.medictionary.models.AlarmModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.lang.Exception
+import java.util.*
 
 
 class DBHandler(context: Context):
@@ -28,12 +29,13 @@ class DBHandler(context: Context):
        private val Treatment_length = "Treatment_length"
        private val Hours_per_dose = "Hours_per_dose"
         private val User_id = "User_id"
+        private val Last_Day_Of_Taking_Pill = "Last_Day_Of_Taking_Pill"
    }
 
    override fun onCreate(db: SQLiteDatabase?) {
        // TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
        //creating table with fields
-       val CREATE_TABLE = ("CREATE TABLE  $TABLE_NAME ($Alarm_ID TEXT PRIMARY KEY ,$Time_taking_pill  TEXT,$Name TEXT, $Pill_ID TEXT,$Total_daily_amount INTEGER,$Treatment_length INTEGER,$Hours_per_dose INTEGER,$Status TEXT,$User_id TEXT)")
+       val CREATE_TABLE = ("CREATE TABLE  $TABLE_NAME ($Alarm_ID TEXT PRIMARY KEY ,$Time_taking_pill  TEXT,$Name TEXT, $Pill_ID TEXT,$Total_daily_amount INTEGER,$Treatment_length INTEGER,$Hours_per_dose INTEGER,$Status INTEGER,$User_id TEXT,$Last_Day_Of_Taking_Pill TEXT)")
        db?.execSQL(CREATE_TABLE)
 
    }
@@ -42,9 +44,17 @@ class DBHandler(context: Context):
        db!!.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
        onCreate(db)
    }
+    fun updateStatus(status : Int,id : String){
+        val db = this.writableDatabase
+        db!!.execSQL("UPDATE $TABLE_NAME SET $Status = $status WHERE $Alarm_ID =  '$id'")
+        FBdb.collection("Alarms").document(id).update("status",status).addOnCompleteListener { }
+        if(status == 1) {
+            val treatment = getAlarmByID(id)[0].treatmentLength.toInt()
+            db!!.execSQL("UPDATE $TABLE_NAME SET $Last_Day_Of_Taking_Pill = '${getLastDay(treatment)}' WHERE $Alarm_ID =  '$id'")
+        }
+    }
 
-
-   fun addAlarm(alarm_ID: String, time_taking_pill: String, name: String, pill_ID: String, total_daily_amount: Int, treatment_length: Int, hours_per_dose: Int, status: String, userId: String){
+   fun addAlarm(alarm_ID: String, time_taking_pill: String, name: String, pill_ID: String, total_daily_amount: Int, treatment_length: Int, hours_per_dose: Int, status: Int, userId: String){
        val db = this.writableDatabase
        val contentValues = ContentValues()
        contentValues.put(Alarm_ID, alarm_ID)
@@ -55,6 +65,7 @@ class DBHandler(context: Context):
        contentValues.put(Treatment_length, treatment_length)
        contentValues.put(Hours_per_dose, hours_per_dose)
        contentValues.put(Status, status)
+       contentValues.put(Last_Day_Of_Taking_Pill, getLastDay(treatment_length).toString())
        contentValues.put(User_id, userId)
        val success = db.insert(TABLE_NAME, null, contentValues)
 
@@ -62,13 +73,73 @@ class DBHandler(context: Context):
     fun getAlarms(user_id: String): List<AlarmModel> {
         var alarmsList = mutableListOf<AlarmModel>()
         val db = writableDatabase
-        val selectQuery = "SELECT  * FROM $TABLE_NAME WHERE $User_id = '$user_id'"
+        val selectQuery = "SELECT  * FROM $TABLE_NAME WHERE $User_id='$user_id' ORDER BY $Time_taking_pill"
+        val cursor = db.rawQuery(selectQuery, null)
+        if (cursor != null && cursor.getCount() > 0) {
+            if (cursor.moveToFirst()) {
+                do {
+                    val alarm = AlarmModel(cursor.getString(cursor.getColumnIndex(Alarm_ID)),cursor.getString(cursor.getColumnIndex(Time_taking_pill)),cursor.getString(cursor.getColumnIndex(Name)),cursor.getString(cursor.getColumnIndex(Total_daily_amount)), cursor.getString(cursor.getColumnIndex(Last_Day_Of_Taking_Pill)),cursor.getString(cursor.getColumnIndex(
+                        Treatment_length)),cursor.getString(cursor.getColumnIndex(Hours_per_dose)),cursor.getInt(cursor.getColumnIndex(
+                        Status)))
+                    alarmsList.add(alarm)
+                } while (cursor.moveToNext())
+            }
+        }
+        cursor.close()
+        return alarmsList
+    }
+    private fun getAlarmByID(id : String): List<AlarmModel> {
+        var alarmsList = mutableListOf<AlarmModel>()
+        val db = writableDatabase
+        val selectQuery = "SELECT  * FROM $TABLE_NAME WHERE $Alarm_ID = '$id'"
         val cursor = db.rawQuery(selectQuery, null)
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    val alarm = AlarmModel(cursor.getString(cursor.getColumnIndex(Name)), cursor.getString(cursor.getColumnIndex(Time_taking_pill)))
+                    val alarm = AlarmModel(cursor.getString(cursor.getColumnIndex(Alarm_ID)),cursor.getString(cursor.getColumnIndex(Time_taking_pill)),cursor.getString(cursor.getColumnIndex(Name)),cursor.getString(cursor.getColumnIndex(Total_daily_amount)), cursor.getString(cursor.getColumnIndex(Last_Day_Of_Taking_Pill)),cursor.getString(cursor.getColumnIndex(
+                        Treatment_length)),cursor.getString(cursor.getColumnIndex(Hours_per_dose)),cursor.getInt(cursor.getColumnIndex(
+                        Status)))
                     alarmsList.add(alarm)
+                } while (cursor.moveToNext())
+            }
+        }
+        cursor.close()
+        return alarmsList
+    }
+    fun getLastDay(treatment_length: Int): Long {
+
+        val calendar = Calendar.getInstance()
+        calendar.add(Calendar.DAY_OF_YEAR, treatment_length)
+
+        return calendar.time.time
+    }
+
+    fun deleteTitle(id:String) : Boolean
+    {
+        FBdb.collection("Alarms").document(id)
+                .delete()
+                .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully deleted!") }
+                .addOnFailureListener { e -> Log.w(TAG, "Error deleting document", e) }
+        val db = writableDatabase
+        return db.delete(TABLE_NAME, "$Alarm_ID='$id'", null) > 0;
+
+    }
+
+    fun getActiveAlarms(): List<AlarmModel> {
+        var alarmsList = mutableListOf<AlarmModel>()
+        val db = writableDatabase
+        val selectQuery = "SELECT  * FROM $TABLE_NAME"
+        val cursor = db.rawQuery(selectQuery, null)
+        val calendar = Calendar.getInstance().time.time
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                do {
+                    val alarm = AlarmModel(cursor.getString(cursor.getColumnIndex(Alarm_ID)),cursor.getString(cursor.getColumnIndex(Time_taking_pill)),cursor.getString(cursor.getColumnIndex(Name)),cursor.getString(cursor.getColumnIndex(Total_daily_amount)), cursor.getString(cursor.getColumnIndex(Last_Day_Of_Taking_Pill)),cursor.getString(cursor.getColumnIndex(
+                        Treatment_length)),cursor.getString(cursor.getColumnIndex(Hours_per_dose)),cursor.getInt(cursor.getColumnIndex(
+                        Status)))
+                    if(alarm.lastDayOfTakingPill.toLong() > calendar && alarm.status == 1) {
+                        alarmsList.add(alarm)
+                    }
                 } while (cursor.moveToNext())
             }
         }
@@ -80,7 +151,7 @@ fun restoreAlarms(user_id: String){
             .whereEqualTo("user_Id", user_id).addSnapshotListener { value, e ->
                 for (document in value!!) {
                     try {
-                        addAlarm(document.id, document.data.get("time_taking_pill") as String, document.data.get("name") as String, document.data.get("pill_ID") as String, document.data.get("total_daily_amount").toString().toInt() , document.data.get("treatment_length").toString().toInt(), document.data.get("hours_per_dose").toString().toInt(), document.data.get("status") as String, document.data.get("user_Id") as String)
+                        addAlarm(document.id, document.data.get("time_taking_pill") as String, document.data.get("name") as String, document.data.get("pill_ID") as String, document.data.get("total_daily_amount").toString().toInt() , document.data.get("treatment_length").toString().toInt(), document.data.get("hours_per_dose").toString().toInt(), document.data.get("status").toString().toInt(), document.data.get("user_Id") as String)
                     }catch (ex: Exception){
                         Log.d(TAG, "${ex}")
                     }
