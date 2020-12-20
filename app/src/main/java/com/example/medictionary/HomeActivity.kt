@@ -22,27 +22,14 @@ enum class ProviderType {
 class HomeActivity : AppCompatActivity() {
     private val searchFragment=SearchFragment()
     private val pillBoxFragment=PillBoxFragment()
-    val db = Firebase.firestore
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val provider = bundle?.getString("provider")
         var dbHelper = DBHandler(this)
         (dbHelper as DBHandler).restoreAlarms(email.toString())
-        val user = UserModel(email.toString(), provider.toString())
-        db.collection("Users")
-                .document(email.toString()).set(user)
-                .addOnSuccessListener { documentReference ->
-                    Log.d("DocSnippets", "DocumentSnapshot written")
-                }
-                .addOnFailureListener { e ->
-                    Log.w("DocSnippets", "Error adding document", e)
-                }
         replaceFragment(searchFragment,email.toString(),provider.toString())
         bottm_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){

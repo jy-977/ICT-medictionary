@@ -3,12 +3,15 @@ package com.example.medictionary.authentication
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import bolts.Task
 import com.example.medictionary.HomeActivity
 import com.example.medictionary.ProviderType
 import com.example.medictionary.R
+import com.example.medictionary.SurveyActivity
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -17,11 +20,15 @@ import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.QuerySnapshot
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_auth.*
 import java.util.regex.Matcher
@@ -33,7 +40,7 @@ class AuthActivity : AppCompatActivity() {
     private lateinit var firebaseAnalytics: FirebaseAnalytics
     private val GOOGLE_SIGN_IN = 100
     private  val callbackManager = CallbackManager.Factory.create()
-
+    val db = Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // Not for production
@@ -66,7 +73,7 @@ class AuthActivity : AppCompatActivity() {
 
         if (email != null && provider != null) {
             authLayout.visibility = View.INVISIBLE
-            showHome(email, ProviderType.valueOf(provider))
+            checkingaccount(email, ProviderType.valueOf(provider))
         }
 
 
@@ -88,12 +95,19 @@ class AuthActivity : AppCompatActivity() {
         signUpButton.setOnClickListener {
 
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
-                    if(passwordEditText.getText().toString().length>8 && isValidPassword(passwordEditText.getText().toString())){
+                    if(passwordEditText.getText().toString().length>8 && isValidPassword(
+                            passwordEditText.getText().toString()
+                        )){
                     FirebaseAuth.getInstance()
-                            .createUserWithEmailAndPassword(emailEditText.text.toString(),
-                                    passwordEditText.text.toString()).addOnCompleteListener {
+                            .createUserWithEmailAndPassword(
+                                emailEditText.text.toString(),
+                                passwordEditText.text.toString()
+                            ).addOnCompleteListener {
                                 if (it.isSuccessful) {
-                                    showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                                    checkingaccount(
+                                        it.result?.user?.email ?: "",
+                                        ProviderType.BASIC
+                                    )
                                 } else {
                                     val errorMessage = "Cannot sign up that email and password"
                                     showAlert(errorMessage)
@@ -111,10 +125,12 @@ class AuthActivity : AppCompatActivity() {
         loginButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
                 FirebaseAuth.getInstance()
-                    .signInWithEmailAndPassword(emailEditText.text.toString(),
-                            passwordEditText.text.toString()).addOnCompleteListener{
+                    .signInWithEmailAndPassword(
+                        emailEditText.text.toString(),
+                        passwordEditText.text.toString()
+                    ).addOnCompleteListener{
                         if (it.isSuccessful){
-                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                            checkingaccount(it.result?.user?.email ?: "", ProviderType.BASIC)
                         } else {
                             val errorMessage = "Cannot log in with that email and password"
                             showAlert(errorMessage)
@@ -148,16 +164,18 @@ class AuthActivity : AppCompatActivity() {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
 
             LoginManager.getInstance().registerCallback(callbackManager,
-                    object : FacebookCallback<LoginResult> {
-                        override fun onSuccess(result: LoginResult?) {
+                object : FacebookCallback<LoginResult> {
+                    override fun onSuccess(result: LoginResult?) {
 
-                            result?.let {
-                                val token = it.accessToken
+                        result?.let {
+                            val token = it.accessToken
 
-                                val credential = FacebookAuthProvider.getCredential(token.token)
-                                FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
+                            val credential = FacebookAuthProvider.getCredential(token.token)
+                            FirebaseAuth.getInstance().signInWithCredential(credential)
+                                .addOnCompleteListener {
                                     if (it.isSuccessful) {
-                                        showHome(it.result?.user?.email
+                                        checkingaccount(
+                                            it.result?.user?.email
                                                 ?: "", ProviderType.FACEBOOK
                                         )
                                     } else {
@@ -165,19 +183,19 @@ class AuthActivity : AppCompatActivity() {
                                         showAlert(errorMessage)
                                     }
                                 }
-                            }
                         }
+                    }
 
-                        override fun onCancel() {
-                            LoginManager.getInstance().logOut()
-                        }
+                    override fun onCancel() {
+                        LoginManager.getInstance().logOut()
+                    }
 
-                        override fun onError(error: FacebookException?) {
-                            val errorMessage = "Facebook Exception"
-                            showAlert(errorMessage)
-                        }
+                    override fun onError(error: FacebookException?) {
+                        val errorMessage = "Facebook Exception"
+                        showAlert(errorMessage)
+                    }
 
-                    })
+                })
         }
 
     }
@@ -198,6 +216,30 @@ class AuthActivity : AppCompatActivity() {
         }
         startActivity(homeIntent)
     }
+    private fun checkingaccount(email: String, provider: ProviderType){
+        val  usersRef = db.collection("Users").document(email).get().addOnCompleteListener (){ task ->
+            if (task.isSuccessful) {
+                val document = task.result
+                if (document!!.data != null) {
+                   showHome(email,provider)
+                    Log.d("TAG", "show home data: " + task.result!!.data)
+                } else {
+                    showSurvey(email,provider)
+                    Log.d("TAG", "show survey data: ")
+                }
+            } else {
+                Log.d("TAG", "show survey ", task.exception)
+            }
+        }
+    }
+
+    private fun showSurvey(email: String, provider: ProviderType) {
+        val surveyIntent = Intent(this, SurveyActivity::class.java).apply {
+            putExtra("email", email)
+            putExtra("provider", provider.name)
+        }
+        startActivity(surveyIntent)
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
@@ -215,7 +257,7 @@ class AuthActivity : AppCompatActivity() {
                     val credential = GoogleAuthProvider.getCredential(account.idToken, null)
                     FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener{
                         if (it.isSuccessful){
-                            showHome(account.email ?: "", ProviderType.GOOGLE)
+                            checkingaccount(account.email ?: "", ProviderType.GOOGLE)
                         } else {
                             val errorMessage = "Google sign in account incorrect."
                             showAlert(errorMessage)
