@@ -111,9 +111,9 @@
 | 3       |30 NOV- 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | DEV : Improve the GUI                   |Yoon,Eyad| 13           | Ongoing  |
 | 3       |30 NOV- 22 DEC | DEV : Merge the code (function)         | Eyad    | 2            | DONE     |
-| 3       |30 NOV- 22 DEC | F2 : Running the Alarms                 | Eyad    | 8            | Ongoing  |
-| 3       |30 NOV- 22 DEC | F2 : Set sleep time for alarm           | Eyad    | 5            | Ongoing  |
-| 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            |          |
+| 3       |30 NOV- 22 DEC | F2 : Running the Alarms                 | Eyad    | 8            | DONE  |
+| 3       |30 NOV- 22 DEC | F2 : Set sleep time for alarm           | Eyad    | 5            | DONE  |
+| 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            | Ongoing |
 | 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            |          |
 | 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
 | 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
