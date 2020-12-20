@@ -38,7 +38,7 @@ class SearchFragment : Fragment() {
             val colorAdapter= ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, colors)
             colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             colorSpinner.adapter=colorAdapter
-            val searchByNameBtn= root.findViewById<View>(R.id.searchNameBtn) as Button
+            val searchByNameBtn= root.findViewById<View>(R.id.searchNameBtn) as ImageButton
             val nameEt= root.findViewById<View>(R.id.nameEt) as EditText
 
             searchByNameBtn.setOnClickListener {
