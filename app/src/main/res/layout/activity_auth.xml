@@ -5,26 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".authentication.AuthActivity">
-<ImageView
-    android:id="@+id/background"
-    android:src="@drawable/mainbackground"
-    android:layout_width="0dp"
-    android:layout_height="120dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0"/>
+
     <ImageView
-        android:id="@+id/person"
-        android:src="@drawable/ic_person"
+        android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="130dp"
+        android:src="@drawable/icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.026" />
 
     <LinearLayout
 
@@ -77,6 +69,10 @@
             android:layout_width="match_parent"
             android:layout_height="8dp" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -106,27 +102,36 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/googleButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:text="Google"
-            android:textColor="@color/colorPrimaryDark" />
+            android:orientation="horizontal">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/facebookButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:text="Facebook"
-            android:textColor="@color/colorPrimaryDark" />
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="Google"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+           <Button
+                android:id="@+id/facebookButton"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="Facebook"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
 
     </LinearLayout>
 
