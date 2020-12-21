@@ -29,7 +29,7 @@
 |3rd|[30](https://drive.google.com/file/d/1qzjPAw4faQeLVzFBucJ1Hvbjv04JTP2a/view?usp=sharing)|[1](https://drive.google.com/file/d/16Y3-MtSKye4G0TDq_Vuat-EuUxIsu3xm/view?usp=sharing)|[2](https://drive.google.com/file/d/16he-e-LPDQ_DA098_ngRbBH3aMRdYALr/view?usp=sharing) |[3](https://drive.google.com/file/d/1_NFVu3B_Bg2Z-FUtvt6v2nG5nk6kJTjx/view?usp=sharing)|4|
 |3rd|7|[8](https://drive.google.com/file/d/1KSLGfl9IrIp7_3tnUVWIQeTvPu97wmpf/view?usp=sharing)|[9](https://drive.google.com/file/d/1rT6YGm9F_y76zy6PHYtiHRxsXNpfSlLn/view?usp=sharing)|[10](https://drive.google.com/file/d/1KSLGfl9IrIp7_3tnUVWIQeTvPu97wmpf/view?usp=sharing)|[11](https://drive.google.com/file/d/1s7YE_9WUDQU0sHaX9xZSzU_cGtiC2_oH/view?usp=sharing)|
 |3rd|[14](https://drive.google.com/file/d/1rm319q3jE9fdxG4bY5Nc8j24v0MvysJz/view?usp=sharing)|[15](https://drive.google.com/file/d/1UbIHSfAicp9fQDZnTpUyppFbh22NOBU_/view?usp=sharing)|[16](https://drive.google.com/file/d/15oAQ-ATOtbX2DsusvU5x-_6cG3B-L1kn/view?usp=sharing)|[17](https://drive.google.com/file/d/1lvfPWeuR3zu5kTf0srDttEQmv1PG9NQp/view?usp=sharing)|18|
-|3rd|21|22|23|24|25|
+|3rd|[21](https://drive.google.com/file/d/1dP52QEQpacQJS9DGRoS83G-4Dr_qhF1K/view?usp=sharing)|22|23|24|25|
 
 🔹<b>Sprint Plan & Report & Retrospective </b>  
 [Sprint Explanation](https://drive.google.com/file/d/11CZinXsZyEYQqsfMdeMaXv0fW9yBDPih/view?usp=sharing) | 
