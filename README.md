@@ -13,9 +13,10 @@
 
 ## :memo: Documents :memo: 
 <b>Presentation</b>
-[Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing)
-[1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing)
-[2nd Presentation](https://drive.google.com/file/d/1oKPeQSKWkR3bJv9vVaVpMC6IDoFwZVS6/view?usp=sharing)
+[Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing) |
+[1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing) |
+[2nd Presentation](https://drive.google.com/file/d/1oKPeQSKWkR3bJv9vVaVpMC6IDoFwZVS6/view?usp=sharing) |
+[3nd presentation]
 
 ### Daily Scrum Meetings Minutes
 |Sprint| MON  | TUE  | WED | THU | FRI |  
@@ -52,6 +53,7 @@
 
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
+[DB model documetation] |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1Qx0BuGmR_1of8bC9yLiAe7_LJbbCTS2V/view?usp=sharing) |
 [Admin part report](https://docs.google.com/document/d/1_8dZmrKGh5G2noeM1RLaqBBHyImPHuq3sOoFWmk3FzI/edit?usp=sharing)
@@ -86,8 +88,8 @@
 | 1       |19 OCT- 09 NOV | F1 : print pill info (description page) |Eyad,Marc| 5            | Done     |
 | 1       |19 OCT- 09 NOV | F1 : List up pills                      |Eyad,Marc| 5            | Done     |
 |         |                |           17 tasks                      |         | 71 in total  |          |
-| 2       |10 NOV- 25 NOV | Prod. Backlog & Sprint Backlog managing | Marc    | 2            | DONE     |
-| 2       |10 NOV- 25 NOV | Admin report                            | Marc,Eyad| 5           | DONE     |
+| 2       |10 NOV- 25 NOV | PBI & Sprint Backlog managing           | Marc    | 2            | DONE     |
+| 2       |10 NOV- 25 NOV | Admin report                            |Marc,Eyad| 5           | DONE     |
 | 2       |10 NOV- 25 NOV | Scrum Planning                          | Marc    | 2            | DONE     |
 | 2       |10 NOV- 25 NOV | Scrum Review - 1st sprint               | Yoon    | 2            | DONE     |
 | 2       |10 NOV- 25 NOV | Scrum Retrospective - 1st sprint        | Yoon    | 2            | DONE     |
