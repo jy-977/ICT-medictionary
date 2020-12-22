@@ -54,7 +54,7 @@ class SetAlarmActivity : AppCompatActivity() {
         saveBtn.setOnClickListener {
             try {
                 val datetime = formatTimes(timePicker.hour.toString()) + ":" + formatTimes(timePicker.minute.toString())
-                showAlert("Would you like to save this alarm?", datetime,name.toString(),email.toString(),id.toString())
+                showAlert("Would you like to save this alarm?", datetime,name.toString(),email.toString(),id.toString(),provider.toString())
 
             } catch (ex: Exception) {
                 ex.printStackTrace()
@@ -83,7 +83,7 @@ class SetAlarmActivity : AppCompatActivity() {
         return times
     }
 
-    private fun showAlert(message: String, element: String,name:String, email: String, id: String) {
+    private fun showAlert(message: String, element: String,name:String, email: String, id: String,provider:String) {
        try {
            val builder = AlertDialog.Builder(this)
            builder.setTitle("Save")
@@ -114,9 +114,11 @@ class SetAlarmActivity : AppCompatActivity() {
                            email.toString()
                        )
                    })
-
-               /*val intent = Intent(this,PillBoxFragment::class.java)
-            startActivity(intent)*/
+               val intent = Intent(this,HomeActivity::class.java)
+               intent.putExtra("email", email)
+               intent.putExtra("provider", provider)
+               intent.putExtra("alarm", "alarm")
+               startActivity(intent)
            }
            builder.setNegativeButton("edit", null)
            val dialog: AlertDialog = builder.create()

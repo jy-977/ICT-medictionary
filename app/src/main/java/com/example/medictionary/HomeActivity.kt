@@ -28,9 +28,13 @@ class HomeActivity : AppCompatActivity() {
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val provider = bundle?.getString("provider")
+        val alarm = bundle?.getString("alarm")
         var dbHelper = DBHandler(this)
         (dbHelper as DBHandler).restoreAlarms(email.toString())
-        replaceFragment(searchFragment,email.toString(),provider.toString())
+        if (alarm.toString()=="alarm")
+            replaceFragment(pillBoxFragment,email.toString(),provider.toString())
+        else
+            replaceFragment(searchFragment,email.toString(),provider.toString())
         bottm_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.ic_search -> replaceFragment(searchFragment,email.toString(),provider.toString())
@@ -38,8 +42,6 @@ class HomeActivity : AppCompatActivity() {
             }
             true
         }
-
-        // Save data
 
         val prefs = getSharedPreferences(getString(R.string.prefs_file), MODE_PRIVATE).edit()
         prefs.putString("email", email)

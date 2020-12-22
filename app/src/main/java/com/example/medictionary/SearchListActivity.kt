@@ -3,6 +3,7 @@ package com.example.medictionary
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
@@ -18,6 +19,10 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
+import kotlin.concurrent.schedule
 
 
 class SearchListActivity : AppCompatActivity() {
@@ -90,9 +95,11 @@ class SearchListActivity : AppCompatActivity() {
 
                 }
                 listView.adapter = ListAdapter(this@SearchListActivity, R.layout.row, list)
+                val handler = Handler()
+                handler.postDelayed({ if(list.size==0)
+                    showAlert("No results") }, 1000)
 
-                if(list.size==0)
-                    showAlert("No results")
+
             }
             override fun onFailure(call: Call<List<Medicine>>, t: Throwable) {
                 Toast.makeText(
