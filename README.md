@@ -120,7 +120,7 @@
 | 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
-| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
+| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Design the app logo               | yoon    | 2            |  DONE    |
