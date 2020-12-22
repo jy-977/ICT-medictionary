@@ -49,11 +49,12 @@
 [3rd sprint planning](https://drive.google.com/file/d/1sQHxSAMCyuDsk7aOkLE52rkXrk4_OL7Y/view?usp=sharing) | 
 [3rd sprint report] | 
 [3rd sprint retrospective] |
-[3rd sprint review]
+[3rd sprint review]|
+[Report of used tools and libraries](https://drive.google.com/file/d/1gIy8e2MtJSk6AAfXUqyKdCTtT36duBjE/view?usp=sharing) | 
 
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
-[DB model documetation] |
+[DB model documetation](https://docs.google.com/document/d/1Hl77rnP_NlA0T1voNMo-1rQddeOyo40fdZW5uD06piw/edit?usp=sharing) |
 [MOCK UP](https://drive.google.com/file/d/1MuMvQFbpFcBe1-9j7IAB1wvIPBWM6v9T/view?usp=sharing)  |
 [General System Architecture](https://drive.google.com/file/d/1Qx0BuGmR_1of8bC9yLiAe7_LJbbCTS2V/view?usp=sharing) |
 [Admin part report](https://docs.google.com/document/d/1_8dZmrKGh5G2noeM1RLaqBBHyImPHuq3sOoFWmk3FzI/edit?usp=sharing)
@@ -105,7 +106,7 @@
 | 2       |10 NOV- 25 NOV | Connection to API                       | Eyad    | 8            | DONE     |
 | 2       |10 NOV- 25 NOV | F3 : notification with pop up           | Yoon    | 8            | DONE     |
 | 2       |10 NOV- 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE     |
-|         |               |          20 tasks                       |         |  61 in total |          |
+|         |               |          20 tasks                       |         |  62 in total |          |
 | 3       |30 NOV- 22 DEC | Sprint meeting managing                 | Ron,Eyad| 2            | DONE     |
 | 3       |30 NOV- 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | DONE     |
 | 3       |30 NOV- 22 DEC | Scrum Planning                          |Eyad,Marc| 1            | DONE     |
@@ -119,13 +120,22 @@
 | 3       |30 NOV- 22 DEC | F2 : Delete alarm function              | Eyad    | 2            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            | DONE     |
+<<<<<<< HEAD
 | 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            | On going |
 | 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            | DONE     |
+=======
+| 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
+| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |  DONE    |
+>>>>>>> a48cce532fa575237d7f71cb9e7b6d74928a55bc
 | 3       |30 NOV- 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Design the app logo               | yoon    | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : update the use case doc           | marc    | 1            |  DONE    |
+<<<<<<< HEAD
 | 3       |30 NOV- 22 DEC | Doc : Report api & libraries            | Eyad    | 1            |  DONE    |
+=======
+| 3       |30 NOV- 22 DEC | Doc : Report api & libraries            | Eyad    | 1            |  Done    |
+>>>>>>> a48cce532fa575237d7f71cb9e7b6d74928a55bc
 
 ## 🚩 Product Backlog items (PBI) 🚩
 
