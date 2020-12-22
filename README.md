@@ -107,7 +107,7 @@
 | 2       |10 NOV- 25 NOV | F3 : noti scenario                      | Yoon    | 5            | DONE     |
 |         |               |          20 tasks                       |         |  61 in total |          |
 | 3       |30 NOV- 22 DEC | Sprint meeting managing                 | Ron,Eyad| 2            | DONE     |
-| 3       |30 NOV- 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | Ongoing  |
+| 3       |30 NOV- 22 DEC | Presentation resource & presentatin     |Marc,Yoon| 8            | DONE     |
 | 3       |30 NOV- 22 DEC | Scrum Planning                          |Eyad,Marc| 1            | DONE     |
 | 3       |30 NOV- 22 DEC | Scrum Retrospective - 2nd sprint        | Marc    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | Scrum Review - 2nd sprint               | Marc    | 1            | DONE     |
@@ -119,13 +119,13 @@
 | 3       |30 NOV- 22 DEC | F2 : Delete alarm function              | Eyad    | 2            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            | DONE     |
-| 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
-| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |          |
+| 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            | On going |
+| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            | DONE     |
 | 3       |30 NOV- 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Design the app logo               | yoon    | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : update the use case doc           | marc    | 1            |  DONE    |
-| 3       |30 NOV- 22 DEC | Doc : Report api & libraries            |         | 1            |          |
+| 3       |30 NOV- 22 DEC | Doc : Report api & libraries            | Eyad    | 1            |  DONE    |
 
 ## 🚩 Product Backlog items (PBI) 🚩
 
@@ -140,7 +140,7 @@
 - list up page
 - print pill info (description page)
 
-<b>[Function 2 : setting alarm & pillbox]</b>
+<b>[Function 2 : setting alarm & pillbox]</b>   
 - setting alarms 
 - pill box
 
