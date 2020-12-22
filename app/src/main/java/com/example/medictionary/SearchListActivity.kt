@@ -20,9 +20,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.*
-import java.util.concurrent.Executors
-import java.util.concurrent.TimeUnit
-import kotlin.concurrent.schedule
+
 
 
 class SearchListActivity : AppCompatActivity() {

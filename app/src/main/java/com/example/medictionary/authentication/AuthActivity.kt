@@ -12,6 +12,7 @@ import com.example.medictionary.HomeActivity
 import com.example.medictionary.ProviderType
 import com.example.medictionary.R
 import com.example.medictionary.SurveyActivity
+import com.example.medictionary.services.NotificationService
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException

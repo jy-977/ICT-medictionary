@@ -6,36 +6,33 @@ import com.google.firebase.messaging.RemoteMessage
 import android.app.NotificationManager
 import android.media.RingtoneManager
 import android.app.PendingIntent
+import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.core.app.NotificationCompat
 import com.example.medictionary.HomeActivity
 import com.example.medictionary.R
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.messaging.FirebaseMessagingService
+import java.lang.Exception
 
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
-
+    val db = Firebase.firestore
     private val TAG = "FirebaseService"
-
     override fun databaseList(): Array<String> {
         return super.databaseList()
     }
 
     override fun onNewToken(token: String) {
         Log.d(TAG, "Refreshed token: $token")
-
-        // If you want to send messages to this application instance or
-        // manage this apps subscriptions on the server side, send the
-        // FCM registration token to your app server.
-     //   sendRegistrationToServer(token)
     }
 
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         Log.d(TAG, "From: " + remoteMessage.from)
-
         if(remoteMessage?.notification != null){
             sendNotification(remoteMessage.notification?.title, remoteMessage.notification!!.body!!)
         }
