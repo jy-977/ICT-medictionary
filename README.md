@@ -120,22 +120,14 @@
 | 3       |30 NOV- 22 DEC | F2 : Delete alarm function              | Eyad    | 2            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create the survey form             | Eyad    | 1            | DONE     |
 | 3       |30 NOV- 22 DEC | F3 : Create notification scenarios      | Yoon    | 2            | DONE     |
-<<<<<<< HEAD
 | 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            | On going |
 | 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            | DONE     |
-=======
-| 3       |30 NOV- 22 DEC | F3 : Connect the noti with user info    | Yoon    | 5            |          |
-| 3       |30 NOV- 22 DEC | DOC : Update data diagram model         | Ron     | 2            |  DONE    |
->>>>>>> a48cce532fa575237d7f71cb9e7b6d74928a55bc
 | 3       |30 NOV- 22 DEC | Doc : Update General Archecture doc     | Yoon    | 1            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Update the financial factor doc   | Ron     | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : Design the app logo               | yoon    | 2            |  DONE    |
 | 3       |30 NOV- 22 DEC | Doc : update the use case doc           | marc    | 1            |  DONE    |
-<<<<<<< HEAD
 | 3       |30 NOV- 22 DEC | Doc : Report api & libraries            | Eyad    | 1            |  DONE    |
-=======
-| 3       |30 NOV- 22 DEC | Doc : Report api & libraries            | Eyad    | 1            |  Done    |
->>>>>>> a48cce532fa575237d7f71cb9e7b6d74928a55bc
+
 
 ## 🚩 Product Backlog items (PBI) 🚩
 
