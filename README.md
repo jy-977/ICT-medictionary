@@ -16,7 +16,8 @@
 [Idea Presentation](https://drive.google.com/file/d/1NmaNPk3C6wbESG9hxqHhxHx1AQnfwlke/view?usp=sharing) |
 [1st Presentation](https://drive.google.com/file/d/11a0aN5vnVDqkqIZ8iqH333aAiGqJrDGO/view?usp=sharing) |
 [2nd Presentation](https://drive.google.com/file/d/1oKPeQSKWkR3bJv9vVaVpMC6IDoFwZVS6/view?usp=sharing) |
-[3nd presentation]
+[3nd presentation](https://drive.google.com/file/d/1iI0xW2cxWWXjsKM4UUMzY31c9dUnmxVl/view?usp=sharing) |
+[Final Presentation] |
 
 ### Daily Scrum Meetings Minutes
 |Sprint| MON  | TUE  | WED | THU | FRI |  
@@ -50,6 +51,7 @@
 [3rd sprint report](https://drive.google.com/file/d/1JeiU78LHVdDj5-u4DreOyVxl7pDLNxZz/view?usp=sharing)| 
 [3rd sprint retrospective] |
 [3rd sprint review]|
+
 [Report of used tools and libraries](https://drive.google.com/file/d/1gIy8e2MtJSk6AAfXUqyKdCTtT36duBjE/view?usp=sharing) | 
 
 🔹<b>Technical Model</b>  
