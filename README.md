@@ -51,9 +51,9 @@
 [3rd sprint report](https://drive.google.com/file/d/1JeiU78LHVdDj5-u4DreOyVxl7pDLNxZz/view?usp=sharing)| 
 [3rd sprint retrospective] |
 [3rd sprint review](https://drive.google.com/file/d/12aE8_krnvlEflabGEG7rQ0YWtXDHAIzQ/view?usp=sharing)
-
 [Report of used tools and libraries](https://drive.google.com/file/d/1gIy8e2MtJSk6AAfXUqyKdCTtT36duBjE/view?usp=sharing) | 
-
+[Demo video](https://drive.google.com/file/d/1QUAZlufmdnNBS9R8C29esgaHb3zEDV3s/view?usp=sharing) | 
+[Demo survey video](https://drive.google.com/file/d/1q4GVywRdNA7nyUO6HnxmkBL3RzFR1Iij/view?usp=sharing) | 
 🔹<b>Technical Model</b>  
 [DB model](https://drive.google.com/file/d/1GxWOj_djvwweOn5BvK4qkvF34YK1vNGu/view?usp=sharing)  |
 [DB model documetation](https://docs.google.com/document/d/1Hl77rnP_NlA0T1voNMo-1rQddeOyo40fdZW5uD06piw/edit?usp=sharing) |
