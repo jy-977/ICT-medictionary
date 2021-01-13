@@ -1,27 +1,25 @@
-# Daily Meeting: 20-12-2020
+# Daily Meeting: 8-12-2020
 
 | Assistant  | Role  |  
 |---|---|
 |[Jeongyun Lee](https://github.com/jy-977) |UI developer(Dev)|
 |[Marc Visa](https://github.com/mvp17) | General Expert(GE)|   
-|[Ronnel Mattew](https://github.com/ron7858) | Fianancial Expert(FE) |  
-|[Eyad Al Hafi](https://github.com/eyadfhafi) | Scrum Master(SM) |  
-
+|[Ronnel Mattew](https://github.com/ron7858) | Financial expert(FE) |  
+|[Eyad Al Hafi](https://github.com/eyadfhafi) | Backend Developer(DEV)/Scrum Master(SM) | |  
 ## Problems/Difficulties
 | Problem  | Task  | Owner | Description |
 |---|---|---|---|
-| _P1_ | API retiring date | All | Our api will be retired at the end of january,2021|
-| _P2_ | Updates and estimations for issues| ALL | Decide who will update the isseus and put estmation|
-| _P3_ | Task distribution | SM | distribute the task roughly|
-
+| _P1_ | Document Managing | ALL | Missing files, Unshared files on Readme file |
+| _P2_ | Daily Scrum minutes | Scrum Master | Update the Daily Scrum minutes |
 
 
 ## Actions
 | Type  | Description  | Owner | Deadline |
 |---|---|---|---|
-| D | P1 : We have to discuss that more with the professor's | All | - |
-| T | P2 : Every member should update and create an estimate time for his or her responsable issue| ALL | - |
-| D | P3 : Yoon - Updating GUI / Ron : Financial part updates /Eyad : Runing alarm,creating survey | ALL | - |
+| T | P1 : Upload the file each other on github, google drive | ALL | 12-12-2020 |
+| D | P1 : google drive file sharing option : everyone who has the link | ALL | - |
+| T | P2 : Upload the Daily meeting scrum | SM | 10-12-2020|
+
 
 
 T: Task
