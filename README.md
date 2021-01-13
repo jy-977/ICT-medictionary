@@ -50,7 +50,7 @@
 [3rd sprint planning](https://drive.google.com/file/d/1sQHxSAMCyuDsk7aOkLE52rkXrk4_OL7Y/view?usp=sharing) | 
 [3rd sprint report](https://drive.google.com/file/d/1JeiU78LHVdDj5-u4DreOyVxl7pDLNxZz/view?usp=sharing)| 
 [3rd sprint retrospective] |
-[3rd sprint review]|
+[3rd sprint review](https://drive.google.com/file/d/12aE8_krnvlEflabGEG7rQ0YWtXDHAIzQ/view?usp=sharing)
 
 [Report of used tools and libraries](https://drive.google.com/file/d/1gIy8e2MtJSk6AAfXUqyKdCTtT36duBjE/view?usp=sharing) | 
 
