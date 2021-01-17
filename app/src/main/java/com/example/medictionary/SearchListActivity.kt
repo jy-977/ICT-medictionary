@@ -90,7 +90,7 @@ class SearchListActivity : AppCompatActivity() {
                 for (med in medicines) {
 
                     if (med.has_image == "True")
-                        list.add(Model(med.medicine_name, med.spl_strength, med.splimage.toString()))
+                        list.add(Model(med.medicine_name, med.spl_strength, med.splimage))
                     else
                         list.add(Model(med.medicine_name, med.spl_strength, ""))
                     idsList.add(med.id)

@@ -89,7 +89,7 @@ class NotificationService : JobService() {
         calendar.set(Calendar.MINUTE, element.time.split(":")[1].toInt())
         for (i in 1 until element.totalDailyAmount.toInt()) {
             calendar.add(Calendar.HOUR, element.hoursPerDose.toInt())
-            times.add(formatTimes(Calendar.HOUR_OF_DAY.toString()) + ":" + formatTimes(Calendar.MINUTE.toString()))
+            times.add(formatTimes(calendar.time.hours.toString()) + ":" + formatTimes(calendar.time.minutes.toString()))
         }
         return times
     }
