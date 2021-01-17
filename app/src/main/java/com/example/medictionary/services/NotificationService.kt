@@ -17,7 +17,7 @@ import kotlin.collections.ArrayList
 
 @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 class NotificationService : JobService() {
-    var CHANNEL_ID = "pills"
+
     var list = mutableListOf<AlarmModel>()
     override fun onCreate() {
         super.onCreate()
@@ -35,8 +35,8 @@ class NotificationService : JobService() {
             override fun run() {
                 Log.d("TIMING", "run")
                 try {
-                    var dbHelper = DBHandler(applicationContext)
-                    list = (dbHelper as DBHandler).getActiveAlarms() as MutableList<AlarmModel>
+                    val dbHelper = DBHandler(applicationContext)
+                    list = dbHelper.getActiveAlarms() as MutableList<AlarmModel>
                 } catch (e: Exception) {}
 
                 hour = SimpleDateFormat("HH:mm", Locale.US).format(Date())
@@ -44,7 +44,7 @@ class NotificationService : JobService() {
                 for (element in list) {
                     Log.d("TIMING", hour)
                     Log.d("TIMING", element.time)
-                    var times = generateTimes(element)
+                    val times = generateTimes(element)
                     Log.d("TIMING", times.toString())
                     if (times.contains(hour) ) {
 
@@ -84,12 +84,12 @@ class NotificationService : JobService() {
 
     fun generateTimes(element: AlarmModel): ArrayList<String> {
         val calendar = Calendar.getInstance()
-        var times = arrayListOf<String>(element.time)
+        val times = arrayListOf(element.time)
         calendar.set(Calendar.HOUR_OF_DAY, element.time.split(":")[0].toInt())
         calendar.set(Calendar.MINUTE, element.time.split(":")[1].toInt())
         for (i in 1 until element.totalDailyAmount.toInt()) {
             calendar.add(Calendar.HOUR, element.hoursPerDose.toInt())
-            times.add(formatTimes(calendar.time.hours.toString()) + ":" + formatTimes(calendar.time.minutes.toString()))
+            times.add(formatTimes(Calendar.HOUR_OF_DAY.toString()) + ":" + formatTimes(Calendar.MINUTE.toString()))
         }
         return times
     }

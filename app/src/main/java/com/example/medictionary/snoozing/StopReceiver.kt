@@ -15,9 +15,9 @@ class StopReceiver : BroadcastReceiver() {
         val element = extras.getString("NOTIFICATION_NAME").toString()
 
 
-        val notif = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        notif.cancelAll()
-        Log.d("stopinng",element)
+        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        notificationManager.cancelAll()
+        Log.d("stopping",element)
 
         context.stopService(Intent(context, ForegroundService::class.java))
     }

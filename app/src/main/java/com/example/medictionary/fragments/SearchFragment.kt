@@ -22,24 +22,27 @@ class SearchFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_search, container, false)
         val bundle = arguments
         val email = bundle!!.getString("email")
-        val provider = bundle!!.getString("provider")
+        val provider = bundle.getString("provider")
         try{
-            var shapeSpinner= root.findViewById<View>(R.id.shapeSpinner) as Spinner
+            val shapeSpinner= root.findViewById<View>(R.id.shapeSpinner) as Spinner
             val colorSpinner=root.findViewById<View>(R.id.colorSpinner) as Spinner
-            val shapes= arrayListOf<String>("CAPSULE", "DOUBLE CIRCLE", "CLOVER", "TRIANGLE", "FREEFORM", "SQUARE", "BULLET", "HEXAGON (6 SIDED)", "OCTAGON (8 SIDED)", "DIAMOND", "TRAPEZOID", "PENTAGON (5 SIDED)", "RECTANGLE", "TEAR", "OVAL", "ROUND")
-            val colors= arrayListOf<String>("PINK", "YELLOW", "ORANGE", "BROWN", "BLUE", "RED", "WHITE", "PURPLE", "GREEN", "GRAY", "BLACK", "TURQUOISE")
+            val shapes= arrayListOf("CAPSULE", "DOUBLE CIRCLE", "CLOVER", "TRIANGLE",
+                "FREEFORM", "SQUARE", "BULLET", "HEXAGON (6 SIDED)", "OCTAGON (8 SIDED)", "DIAMOND",
+                "TRAPEZOID", "PENTAGON (5 SIDED)", "RECTANGLE", "TEAR", "OVAL", "ROUND")
+            val colors= arrayListOf("PINK", "YELLOW", "ORANGE", "BROWN", "BLUE", "RED", "WHITE",
+                "PURPLE", "GREEN", "GRAY", "BLACK", "TURQUOISE")
             val shapeAdapter= ArrayAdapter(
                     activity!!,
                     android.R.layout.simple_spinner_item,
                     shapes
             )
             shapeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            shapeSpinner.adapter=shapeAdapter
-            val colorAdapter= ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, colors)
+            shapeSpinner.adapter = shapeAdapter
+            val colorAdapter = ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, colors)
             colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            colorSpinner.adapter=colorAdapter
-            val searchByNameBtn= root.findViewById<View>(R.id.searchNameBtn) as ImageButton
-            val nameEt= root.findViewById<View>(R.id.nameEt) as EditText
+            colorSpinner.adapter = colorAdapter
+            val searchByNameBtn = root.findViewById<View>(R.id.searchNameBtn) as ImageButton
+            val nameEt = root.findViewById<View>(R.id.nameEt) as EditText
 
             searchByNameBtn.setOnClickListener {
                 if (nameEt.text.isNotEmpty() || nameEt.text.isNotBlank()) {
@@ -48,14 +51,14 @@ class SearchFragment : Fragment() {
                     intent.putExtra("name", nameEt.text.toString())
                     intent.putExtra("email", email.toString())
                     intent.putExtra("provider", provider.toString())
-                    startActivity(intent);
-
+                    startActivity(intent)
 
                 } else
                     showAlert("Name field should not be empty")
             }
             val searchByCharBtn = root.findViewById<View>(R.id.searchCharBtn) as Button
             val codeTxt = root.findViewById<View>(R.id.codeEt) as EditText
+
             searchByCharBtn.setOnClickListener {
                 if (codeTxt.text.isNotEmpty() || codeTxt.text.isNotBlank()) {
                     val intent = Intent(activity, SearchListActivity::class.java)
@@ -72,7 +75,7 @@ class SearchFragment : Fragment() {
             }
 
         }catch (ex: Exception){
-            Toast.makeText(activity!!, "${ex}", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity!!, "$ex", Toast.LENGTH_LONG).show()
         }
 
         return root

@@ -20,8 +20,6 @@ import com.example.medictionary.extra.DBHandler
 import com.example.medictionary.services.ServiceTrigger
 import com.example.medictionary.interfaces.CellClickListener
 import com.example.medictionary.models.AlarmModel
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.alarmrow.view.*
 import kotlinx.android.synthetic.main.fragment_pill_box.*
 import java.lang.Exception
@@ -30,7 +28,7 @@ import java.util.*
 
 class PillBoxFragment : Fragment(), CellClickListener {
     lateinit var dbHelper:DBHandler
-    val CHANNEL_ID = "pills"
+    private val channelId = "pills"
     var list = mutableListOf<AlarmModel>()
     lateinit var adpter : AlarmListAdapter
     override fun onCreateView(
@@ -41,19 +39,19 @@ class PillBoxFragment : Fragment(), CellClickListener {
     }
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
-        var format : String = if(android.text.format.DateFormat.is24HourFormat(activity)){
+        val format : String = if(android.text.format.DateFormat.is24HourFormat(activity)){
             "24"
         } else { "12" }
             val bundle = arguments
             val email = bundle!!.getString("email").toString()
-            val provider = bundle!!.getString("provider")
-            val i = Intent(activity!!, ServiceTrigger::class.java)
-            activity!!.startService(i)
+            // val provider = bundle.getString("provider")
+            val intent = Intent(activity!!, ServiceTrigger::class.java)
+            activity!!.startService(intent)
             alarmrecylerView.apply {
                   try {
                       dbHelper = DBHandler(activity!!)
                       list =
-                          (dbHelper as DBHandler).getAlarms(email.toString()) as MutableList<AlarmModel>
+                          dbHelper.getAlarms(email) as MutableList<AlarmModel>
                       if (list.size == 0) {
                           showAlert("No results")
                       }
@@ -62,11 +60,11 @@ class PillBoxFragment : Fragment(), CellClickListener {
                           layoutManager = LinearLayoutManager(activity!!)
                           adapter = adpter
                       }
-                      createNotificationChannel(CHANNEL_ID)
+                      createNotificationChannel()
                       val calendar = Calendar.getInstance()
                       for (i: AlarmModel in list) {
                           if (i.lastDayOfTakingPill.toLong() < calendar.time.time) {
-                              (dbHelper as DBHandler).updateStatus(0, i.id)
+                              dbHelper.updateStatus(0, i.id)
                           }
                       }
                   }catch (ex:Exception){
@@ -84,9 +82,9 @@ class PillBoxFragment : Fragment(), CellClickListener {
         dialog.show()
     }
 
-    override fun onCellClickListener(it: View,id:String) {
-        val statusnum=1
-        (dbHelper as DBHandler).updateStatus(
+    override fun onCellClickListener(it: View, id:String) {
+        // val statusnum=1
+        dbHelper.updateStatus(
             status = if (it.statueSwitch.isChecked) {
                 1
             } else {
@@ -99,21 +97,21 @@ class PillBoxFragment : Fragment(), CellClickListener {
 
      override fun onCellDeleteListener(it: View,id:String,position: Int) {
         try {
-            (dbHelper as DBHandler).deleteTitle(id)
+            dbHelper.deleteTitle(id)
             list.removeAt(position)
             adpter.notifyItemRemoved(position)
         }catch (ex:Exception){
-            Toast.makeText(activity!!,"${ex}",Toast.LENGTH_LONG).show()
+            Toast.makeText(activity!!,"$ex",Toast.LENGTH_LONG).show()
         }
     }
 
-    private fun createNotificationChannel(CHANNEL_ID: String) {
+    private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name: CharSequence = CHANNEL_ID
+            val name: CharSequence = channelId
             val description = "pills"
             val importance = NotificationManager.IMPORTANCE_HIGH
             val channel = NotificationChannel(
-                CHANNEL_ID, name,
+                channelId, name,
                 importance
             )
             val idAudio = R.raw.ringtone

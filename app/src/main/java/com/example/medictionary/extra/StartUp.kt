@@ -9,8 +9,8 @@ class StartUp : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == Intent.ACTION_BOOT_COMPLETED) {
-            val i = Intent(context, ServiceTrigger::class.java)
-            context.startService(i)
+            val intent = Intent(context, ServiceTrigger::class.java)
+            context.startService(intent)
         }
     }
 }

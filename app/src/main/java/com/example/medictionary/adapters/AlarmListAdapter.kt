@@ -1,5 +1,6 @@
 package com.example.medictionary.adapters
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,15 +16,21 @@ import java.util.*
 class AlarmListAdapter(
     private val cellClickListener: CellClickListener,
     private val alarms: MutableList<AlarmModel>,
-    private val format: String
-):RecyclerView.Adapter<AlarmListAdapter.ViewHolder>() {
-    val calendar = Calendar.getInstance()
-    var _12HourSDF: SimpleDateFormat = SimpleDateFormat("hh:mm a")
-    var _24HourSDF = SimpleDateFormat("HH:mm")
+    private val format: String):RecyclerView.Adapter<AlarmListAdapter.ViewHolder>() {
+
+    private val calendar = Calendar.getInstance()
+
+    @SuppressLint("SimpleDateFormat")
+    var sdf12Hour: SimpleDateFormat = SimpleDateFormat("hh:mm a")
+
+    @SuppressLint("SimpleDateFormat")
+    var sdf24Hour = SimpleDateFormat("HH:mm")
+
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val alarm_nameTxt:TextView=itemView.alarm_nameTxt
+        val alarmNameTxt:TextView=itemView.alarm_nameTxt
         val timeTxt:TextView=itemView.timeTxt
-        val statueSwitch = itemView.statueSwitch
+        val statueSwitch = itemView.statueSwitch!!
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,15 +39,16 @@ class AlarmListAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.alarm_nameTxt.text=alarms[position].name
+        holder.alarmNameTxt.text=alarms[position].name
         if(format == "12"){
-            val _24HourDt = _24HourSDF.parse(alarms[position].time)
-            holder.timeTxt.text=_12HourSDF.format(_24HourDt).toString()
+            val dt24Hour = sdf24Hour.parse(alarms[position].time)
+            holder.timeTxt.text = sdf12Hour.format(dt24Hour).toString()
         }else {
             holder.timeTxt.text=alarms[position].time
         }
 
-        holder.statueSwitch.isChecked = (alarms[position].status == 1) && (alarms[position].lastDayOfTakingPill.toLong() > calendar.time.time)
+        holder.statueSwitch.isChecked = (alarms[position].status == 1) &&
+                (alarms[position].lastDayOfTakingPill.toLong() > calendar.time.time)
         holder.itemView.statueSwitch.setOnCheckedChangeListener { _, _ -> cellClickListener.onCellClickListener(
             holder.itemView,alarms[position].id
         ) }

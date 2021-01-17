@@ -12,10 +12,9 @@ import com.example.medictionary.models.UserModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_survey.*
-import kotlinx.android.synthetic.main.fragment_search.*
 
 class SurveyActivity: AppCompatActivity() {
-    val db = Firebase.firestore
+    private val db = Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_survey)
@@ -29,7 +28,7 @@ class SurveyActivity: AppCompatActivity() {
         val coldMd= findViewById<View>(R.id.coldMdSpinner) as Spinner
         val prescribed= findViewById<View>(R.id.prescribedSpinner) as Spinner
         val allergy=findViewById<View>(R.id.allergySpinner) as Spinner
-        val spinner= arrayListOf<String>("Yes","No")
+        val spinner= arrayListOf("Yes","No")
         val spinnerAdapter= ArrayAdapter(
             this,
             android.R.layout.simple_spinner_item,
@@ -49,7 +48,7 @@ class SurveyActivity: AppCompatActivity() {
             val user = UserModel(email.toString(), provider.toString())
             db.collection("Users")
                 .document(email.toString()).set(user)
-                .addOnSuccessListener { documentReference ->
+                .addOnSuccessListener { _ ->
                     Log.d("DocSnippets", "DocumentSnapshot written")
                 }
                 .addOnFailureListener { e ->
@@ -57,7 +56,7 @@ class SurveyActivity: AppCompatActivity() {
                 }
             db.collection("Survey")
                 .document(email.toString()).set(survey)
-                .addOnSuccessListener { documentReference ->
+                .addOnSuccessListener { _ ->
                     Log.d("DocSnippets", "DocumentSnapshot written")
                 }
                 .addOnFailureListener { e ->
@@ -69,6 +68,5 @@ class SurveyActivity: AppCompatActivity() {
                }
             startActivity(surveyIntent)
         }
-        //
     }
 }

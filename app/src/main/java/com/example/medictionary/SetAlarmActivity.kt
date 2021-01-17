@@ -21,14 +21,14 @@ import java.lang.Exception
 import java.util.*
 
 class SetAlarmActivity : AppCompatActivity() {
-    val db = Firebase.firestore
-    lateinit var saveBtn: Button
-    lateinit var days: EditText
-    lateinit var number: EditText
-    lateinit var hours: EditText
-    lateinit var timePicker: TimePicker
-    lateinit var dbHelper: DBHandler
-    val status = 1
+    private val db = Firebase.firestore
+    private lateinit var saveBtn: Button
+    private lateinit var days: EditText
+    private lateinit var number: EditText
+    private lateinit var hours: EditText
+    private lateinit var timePicker: TimePicker
+    private lateinit var dbHelper: DBHandler
+    private val status = 1
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +44,7 @@ class SetAlarmActivity : AppCompatActivity() {
         number = findViewById<View>(R.id.number) as EditText
         hours = findViewById<View>(R.id.hours) as EditText
         timePicker = findViewById<View>(R.id.timepicker) as TimePicker
-        var format : String = if(android.text.format.DateFormat.is24HourFormat(this)){
+        val format : String = if(android.text.format.DateFormat.is24HourFormat(this)){
             "24"
         } else { "12" }
         if (format=="24")
@@ -54,16 +54,17 @@ class SetAlarmActivity : AppCompatActivity() {
         saveBtn.setOnClickListener {
             try {
                 val datetime = formatTimes(timePicker.hour.toString()) + ":" + formatTimes(timePicker.minute.toString())
-                showAlert("Would you like to save this alarm?", datetime,name.toString(),email.toString(),id.toString(),provider.toString())
+                showAlert("Would you like to save this alarm?", datetime, name.toString(),
+                           email.toString(),id.toString(),provider.toString())
 
             } catch (ex: Exception) {
                 ex.printStackTrace()
-                Toast.makeText(applicationContext, "${ex}", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "$ex", Toast.LENGTH_LONG).show()
             }
         }
     }
 
-    fun formatTimes(time: String): String {
+    private fun formatTimes(time: String): String {
         return if (time.length < 2) {
             "0$time"
         } else {
@@ -73,7 +74,7 @@ class SetAlarmActivity : AppCompatActivity() {
 
     private fun generateTimes(element: String): ArrayList<String> {
         val calendar = Calendar.getInstance()
-        var times = arrayListOf<String>(element)
+        val times = arrayListOf(element)
         calendar.set(Calendar.HOUR_OF_DAY, element.split(":")[0].toInt())
         calendar.set(Calendar.MINUTE, element.split(":")[1].toInt())
         for (i in 1 until number.text.toString().toInt()) {
@@ -87,33 +88,32 @@ class SetAlarmActivity : AppCompatActivity() {
        try {
            val builder = AlertDialog.Builder(this)
            builder.setTitle("Save")
-           builder.setMessage(message + "\n${generateTimes(element)}\nFor ${days.text.toString()} days")
+           builder.setMessage(message + "\n${generateTimes(element)}\nFor ${days.text} days")
            builder.setPositiveButton("Accept") { _, _ ->
                val alarm = ALarmModelFB(
                    element,
-                   name.toString(),
-                   id.toString(),
+                   name,
+                   id,
                    number.text.toString().toInt(),
                    days.text.toString().toInt(),
                    hours.text.toString().toInt(),
                    status,
-                   email.toString()
+                   email
                )
-               var message: String = ""
                db.collection("Alarms").add(alarm)
-                   .addOnSuccessListener({ documentReference ->
+                   .addOnSuccessListener { documentReference ->
                        dbHelper.addAlarm(
                            documentReference.id,
                            element,
-                           name.toString(),
-                           id.toString(),
+                           name,
+                           id,
                            number.text.toString().toInt(),
                            days.text.toString().toInt(),
                            hours.text.toString().toInt(),
                            status,
-                           email.toString()
+                           email
                        )
-                   })
+                   }
                val intent = Intent(this,HomeActivity::class.java)
                intent.putExtra("email", email)
                intent.putExtra("provider", provider)
@@ -124,7 +124,7 @@ class SetAlarmActivity : AppCompatActivity() {
            val dialog: AlertDialog = builder.create()
            dialog.show()
        }catch (ex:Exception){
-           Toast.makeText(this@SetAlarmActivity,"${ex}", Toast.LENGTH_LONG).show()
+           Toast.makeText(this@SetAlarmActivity,"$ex", Toast.LENGTH_LONG).show()
        }
     }
 

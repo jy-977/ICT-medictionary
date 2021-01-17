@@ -7,12 +7,10 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import bolts.Task
 import com.example.medictionary.HomeActivity
 import com.example.medictionary.ProviderType
 import com.example.medictionary.R
 import com.example.medictionary.SurveyActivity
-import com.example.medictionary.services.NotificationService
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -21,14 +19,11 @@ import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_auth.*
@@ -39,13 +34,11 @@ import java.util.regex.Pattern
 class AuthActivity : AppCompatActivity() {
 
     private lateinit var firebaseAnalytics: FirebaseAnalytics
-    private val GOOGLE_SIGN_IN = 100
+    private val googleSignIn = 100
     private  val callbackManager = CallbackManager.Factory.create()
-    val db = Firebase.firestore
+    private val db = Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        // Not for production
-        Thread.sleep(1000)
         setTheme(R.style.AppTheme)
 
         super.onCreate(savedInstanceState)
@@ -76,16 +69,14 @@ class AuthActivity : AppCompatActivity() {
             authLayout.visibility = View.INVISIBLE
             checkingaccount(email, ProviderType.valueOf(provider))
         }
-
-
     }
 
 
-    fun isValidPassword(password: String?): Boolean {
+    private fun isValidPassword(password: String): Boolean {
         val pattern: Pattern
         val matcher: Matcher
-        val PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$"
-        pattern = Pattern.compile(PASSWORD_PATTERN)
+        val passwordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$"
+        pattern = Pattern.compile(passwordPattern)
         matcher = pattern.matcher(password)
         return matcher.matches()
     }
@@ -96,8 +87,8 @@ class AuthActivity : AppCompatActivity() {
         signUpButton.setOnClickListener {
 
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
-                    if(passwordEditText.getText().toString().length>8 && isValidPassword(
-                            passwordEditText.getText().toString()
+                    if(passwordEditText.text.toString().length>8 && isValidPassword(
+                            passwordEditText.text.toString()
                         )){
                     FirebaseAuth.getInstance()
                             .createUserWithEmailAndPassword(
@@ -157,7 +148,7 @@ class AuthActivity : AppCompatActivity() {
             val googleClient = GoogleSignIn.getClient(this, googleConf)
             googleClient.signOut()
 
-            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)
+            startActivityForResult(googleClient.signInIntent, googleSignIn)
         }
 
         facebookButton.setOnClickListener {
@@ -173,10 +164,10 @@ class AuthActivity : AppCompatActivity() {
 
                             val credential = FacebookAuthProvider.getCredential(token.token)
                             FirebaseAuth.getInstance().signInWithCredential(credential)
-                                .addOnCompleteListener {
-                                    if (it.isSuccessful) {
+                                .addOnCompleteListener { task ->
+                                    if (task.isSuccessful) {
                                         checkingaccount(
-                                            it.result?.user?.email
+                                            task.result?.user?.email
                                                 ?: "", ProviderType.FACEBOOK
                                         )
                                     } else {
@@ -218,7 +209,7 @@ class AuthActivity : AppCompatActivity() {
         startActivity(homeIntent)
     }
     private fun checkingaccount(email: String, provider: ProviderType){
-        val  usersRef = db.collection("Users").document(email).get().addOnCompleteListener (){ task ->
+        db.collection("Users").document(email).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val document = task.result
                 if (document!!.data != null) {
@@ -248,7 +239,7 @@ class AuthActivity : AppCompatActivity() {
 
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == GOOGLE_SIGN_IN) {
+        if (requestCode == googleSignIn) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
 
             try {
@@ -266,7 +257,6 @@ class AuthActivity : AppCompatActivity() {
                     }
                 }
             } catch (e: ApiException) {
-                val errorMessage = "Api Exception from trying sign in with Google account."
                 e.printStackTrace()
             }
         }
